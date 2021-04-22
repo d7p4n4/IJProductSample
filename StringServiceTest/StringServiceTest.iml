@@ -46,5 +46,6 @@
     <orderEntry type="library" name="Maven: ac4y.base:database:1.20190609.1" level="project" />
     <orderEntry type="library" name="Maven: ac4y.service:ac4yServiceCommon:1.1.20210415.3" level="project" />
     <orderEntry type="library" name="Maven: com.microsoft.sqlserver:mssql-jdbc:8.4.0.jre8" level="project" />
+    <orderEntry type="module" module-name="IJProductSampleStringService" />
   </component>
 </module>

@@ -9,6 +9,7 @@
         <module name="ObjectServiceTest" />
         <module name="IJProductSampleObjectService" />
         <module name="IJProductSampleStringService" />
+        <module name="StringServiceTest" />
         <module name="IJProductSampleHibernate" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
       <module name="IJProductSampleObjectService" target="8" />
       <module name="IJProductSampleStringService" target="8" />
       <module name="ObjectServiceTest" target="8" />
+      <module name="StringServiceTest" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>sycompla</groupId>
-    <artifactId>IJProductSampleStringService</artifactId>
+    <artifactId>StringServiceTest</artifactId>
     <version>1.1.20210422.1</version>
 
     <repositories>
@@ -55,6 +55,12 @@
             <groupId>sycompla</groupId>
             <artifactId>IJProductSampleObjectService</artifactId>
             <version>1.1.20210422.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>sycompla</groupId>
+            <artifactId>IJProductSampleStringService</artifactId>
+            <version>1.1.20210422.1</version>
             <scope>compile</scope>
         </dependency>
 
