@@ -1,9 +1,7 @@
 package com.sycompla.test;
 
 
-import com.sycompla.objectService.category.CategoryObjectServices;
-import com.sycompla.objectService.category.GetCategoryByIdRequest;
-import com.sycompla.objectService.category.GetCategoryByIdResponse;
+import com.sycompla.objectService.category.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,15 +16,23 @@ public class Run {
                         2
                 ));
 
-        System.out.println(response);
-
         return response;
 
     } // getCategoryById
 
+    public GetCategoryListResponse getCategoryList() {
+
+        GetCategoryListResponse response = new CategoryObjectServices()
+                .getCategoryList(new GetCategoryListRequest());
+
+        return  response;
+
+    } // getCategoryList
+
     public static void main(String[] args) {
 
-        new Run().getCategoryById();
+        //new Run().getCategoryById();
+        new Run().getCategoryList();
 
     } // main
 

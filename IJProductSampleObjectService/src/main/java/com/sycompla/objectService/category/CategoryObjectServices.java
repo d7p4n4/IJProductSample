@@ -40,6 +40,40 @@ public class CategoryObjectServices {
 
         }
 
-    };
+    } // getCategoryById
+
+    public GetCategoryListResponse getCategoryList(GetCategoryListRequest request) {
+
+        GetCategoryListResponse response = new GetCategoryListResponse();
+
+        try {
+
+            response.setCategoryList(new CategoryHibernateCap().getList());
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            1
+                            , "ok"
+                            , null
+                    )
+            );
+
+            return response;
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+            return response;
+
+        }
+
+    } // getCategoryList
 
 }

@@ -19,4 +19,5 @@ public class GetCategoryByIdRequest extends Ac4yServiceRequest {
     public void setId(int id) {
         this.id = id;
     }
-}
+
+} // GetCategoryByIdRequest
