@@ -3,11 +3,13 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/IJProductSampleObjectService/pom.xml" />
         <option value="$PROJECT_DIR$/IJProductSampleHibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/IJProductSampleStringService/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

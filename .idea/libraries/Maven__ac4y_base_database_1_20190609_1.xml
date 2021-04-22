@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ac4y.base:database:1.20190609.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ac4y/base/database/1.20190609.1/database-1.20190609.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ac4y/base/database/1.20190609.1/database-1.20190609.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ac4y/base/database/1.20190609.1/database-1.20190609.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -9,13 +9,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.microsoft.sqlserver:mssql-jdbc:8.4.0.jre8" level="project" />
+    <orderEntry type="module" module-name="IJProductSampleObjectService" />
+    <orderEntry type="module" module-name="IJProductSampleHibernate" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.6.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:slf4j-simple:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.11" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.4.27.Final" level="project" />
@@ -38,5 +36,15 @@
     <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:c3p0:0.9.5.2" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:mchange-commons-java:0.2.11" level="project" />
+    <orderEntry type="library" name="Maven: ac4y.service:ac4yServiceDomain:1.1.20210415.1" level="project" />
+    <orderEntry type="library" name="Maven: ac4y.base:ac4yBase4JsonAndXml:1.20190609.1" level="project" />
+    <orderEntry type="library" name="Maven: ac4y.base:ac4yBase:1.20190505.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jdom:jdom2:2.0.6" level="project" />
+    <orderEntry type="library" name="Maven: ac4y.base:ac4yClass:1.20190607.2" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.persistence:javax.persistence:2.1.0" level="project" />
+    <orderEntry type="library" name="Maven: ac4y.base:ac4yContext:1.20190609.1" level="project" />
+    <orderEntry type="library" name="Maven: ac4y.base:database:1.20190609.1" level="project" />
+    <orderEntry type="library" name="Maven: ac4y.service:ac4yServiceCommon:1.1.20210415.3" level="project" />
+    <orderEntry type="library" name="Maven: com.microsoft.sqlserver:mssql-jdbc:8.4.0.jre8" level="project" />
   </component>
 </module>
