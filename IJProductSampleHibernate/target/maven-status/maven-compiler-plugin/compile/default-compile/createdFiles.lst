@@ -1,0 +1,6 @@
+com\company\Main.class
+com\sycompla\entities\Category.class
+com\sycompla\service\CategoryStringService.class
+com\sycompla\cap\CategoryHibernateCap.class
+com\sycompla\entities\Product.class
+com\sycompla\gson\GsonCap.class

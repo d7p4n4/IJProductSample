@@ -1,0 +1,5 @@
+com\sycompla\objectService\category\GetCategoryListRequest.class
+com\sycompla\objectService\category\CategoryObjectServices.class
+com\sycompla\objectService\category\GetCategoryListResponse.class
+com\sycompla\objectService\category\GetCategoryByIdRequest.class
+com\sycompla\objectService\category\GetCategoryByIdResponse.class
