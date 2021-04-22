@@ -7,6 +7,16 @@ public class GetCategoryByIdResponse extends Ac4yServiceResponse {
 
     public Category category;
 
+    public String categoryString;
+
+    public String getCategoryString() {
+        return categoryString;
+    }
+
+    public void setCategoryString(String categoryString) {
+        this.categoryString = categoryString;
+    }
+
     public Category getCategory() {
         return category;
     }
