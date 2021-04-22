@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ObjectServiceTest" />
         <module name="IJProductSampleObjectService" />
         <module name="IJProductSampleStringService" />
         <module name="IJProductSampleHibernate" />
@@ -15,6 +16,7 @@
       <module name="IJProductSampleHibernate" target="8" />
       <module name="IJProductSampleObjectService" target="8" />
       <module name="IJProductSampleStringService" target="8" />
+      <module name="ObjectServiceTest" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

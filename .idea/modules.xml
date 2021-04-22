@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleHibernate/IJProductSampleHibernate.iml" filepath="$PROJECT_DIR$/IJProductSampleHibernate/IJProductSampleHibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleObjectService/IJProductSampleObjectService.iml" filepath="$PROJECT_DIR$/IJProductSampleObjectService/IJProductSampleObjectService.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleStringService/IJProductSampleStringService.iml" filepath="$PROJECT_DIR$/IJProductSampleStringService/IJProductSampleStringService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectServiceTest/ObjectServiceTest.iml" filepath="$PROJECT_DIR$/ObjectServiceTest/ObjectServiceTest.iml" />
     </modules>
   </component>
 </project>

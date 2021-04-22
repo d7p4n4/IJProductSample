@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/IJProductSampleObjectService/pom.xml" />
         <option value="$PROJECT_DIR$/IJProductSampleHibernate/pom.xml" />
         <option value="$PROJECT_DIR$/IJProductSampleStringService/pom.xml" />
+        <option value="$PROJECT_DIR$/ObjectServiceTest/pom.xml" />
       </list>
     </option>
   </component>

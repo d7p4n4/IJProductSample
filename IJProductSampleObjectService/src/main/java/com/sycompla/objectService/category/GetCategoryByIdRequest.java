@@ -6,6 +6,12 @@ public class GetCategoryByIdRequest extends Ac4yServiceRequest {
 
     public int id;
 
+    public  GetCategoryByIdRequest() {}
+
+    public GetCategoryByIdRequest(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
