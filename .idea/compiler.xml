@@ -12,6 +12,7 @@
         <module name="IJProductSampleUserStringService" />
         <module name="ObjectServiceTest" />
         <module name="IJProductSampleStringService" />
+        <module name="UserStringService" />
         <module name="IJProductSampleUserHibernate" />
         <module name="IJProductSampleUserObjectService" />
         <module name="IJProductSampleHibernate" />
@@ -29,6 +30,7 @@
       <module name="ObjectServiceTest" target="8" />
       <module name="StringServiceTest" target="8" />
       <module name="UserObjectServiceTest" target="8" />
+      <module name="UserStringService" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

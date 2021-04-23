@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/ObjectServiceTest/ObjectServiceTest.iml" filepath="$PROJECT_DIR$/ObjectServiceTest/ObjectServiceTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringServiceTest/StringServiceTest.iml" filepath="$PROJECT_DIR$/StringServiceTest/StringServiceTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/UserObjectServiceTest/UserObjectServiceTest.iml" filepath="$PROJECT_DIR$/UserObjectServiceTest/UserObjectServiceTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserStringService/UserStringService.iml" filepath="$PROJECT_DIR$/UserStringService/UserStringService.iml" />
     </modules>
   </component>
 </project>
