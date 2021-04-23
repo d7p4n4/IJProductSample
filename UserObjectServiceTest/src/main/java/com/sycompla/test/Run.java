@@ -22,6 +22,17 @@ public class Run {
 
     } // getById
 
+    public GetByGuidResponse getByGuid() {
+
+        GetByGuidResponse response = new UserObjectService()
+                .getByGuid(new GetByGuidRequest(
+                        "9B77759771EF323AEB9F25EF1D98334F8B8931AD30B3998EF7446A7D1633B8D8DF31BD627411B75B9105643D9FE70B7CEA73BBB3673080EEDB625C195E0F3E68"
+                ));
+
+        return response;
+
+    } // getByGuid
+
     public GetListResponse getList() {
 
         GetListResponse response = new UserObjectService()
@@ -30,6 +41,28 @@ public class Run {
         return  response;
 
     } // getList
+
+    public IsExistsByIdResponse isExistsById(IsExistsByIdRequest request) {
+
+        IsExistsByIdResponse response = new UserObjectService()
+                .isExistsById(new IsExistsByIdRequest(
+                        5
+                ));
+
+        return response;
+
+    } // isExistsById
+
+    public IsExistsByGuidResponse isExistsById(IsExistsByGuidRequest request) {
+
+        IsExistsByGuidResponse response = new UserObjectService()
+                .isExistsByGuid(new IsExistsByGuidRequest(
+                        "tesztguid"
+                ));
+
+        return response;
+
+    } // isExistsByGuid
 
     public InsertResponse insert() {
 
@@ -80,6 +113,17 @@ public class Run {
         return response;
 
     } // delete
+
+    public DeleteByGuidResponse deleteByGuid(DeleteByGuidRequest request) {
+
+        DeleteByGuidResponse response = new UserObjectService()
+                .deleteByGuid(new DeleteByGuidRequest(
+                        "tesztguid"
+                ));
+
+        return response;
+
+    } // deleteByGuid
 
     public static void main(String[] args) {
 

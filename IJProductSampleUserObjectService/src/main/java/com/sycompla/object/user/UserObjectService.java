@@ -113,15 +113,27 @@ public class UserObjectService {
 
         try {
 
-            response.setExists(new UserHibernate().isExistsById(request.getId()));
+            if(new UserHibernate().isExistsById(request.getId())) {
 
-            response.setResult(
-                    new Ac4yProcessResult(
-                            1
-                            , "ok"
-                            , null
-                    )
-            );
+                response.setResult(
+                        new Ac4yProcessResult(
+                                1
+                                , "exists"
+                                , null
+                        )
+                );
+
+            } else {
+
+                response.setResult(
+                        new Ac4yProcessResult(
+                                -1
+                                , "not exists"
+                                , null
+                        )
+                );
+
+            }
 
             return response;
 
@@ -147,15 +159,27 @@ public class UserObjectService {
 
         try {
 
-            response.setExists(new UserHibernate().isExistsByGuid(request.getGuid()));
+            if(new UserHibernate().isExistsByGuid(request.getGuid())) {
 
-            response.setResult(
-                    new Ac4yProcessResult(
-                            1
-                            , "ok"
-                            , null
-                    )
-            );
+                response.setResult(
+                        new Ac4yProcessResult(
+                                1
+                                , "exists"
+                                , null
+                        )
+                );
+
+            } else {
+
+                response.setResult(
+                        new Ac4yProcessResult(
+                                -1
+                                , "not exists"
+                                , null
+                        )
+                );
+
+            }
 
             return response;
 
