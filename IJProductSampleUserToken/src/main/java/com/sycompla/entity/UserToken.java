@@ -3,7 +3,10 @@ package com.sycompla.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "UserToken", catalog = "UserDb", schema = "dbo")
+@Table(name = "UserToken", catalog = "UserTeszt", schema = "dbo")
+@org.hibernate.annotations.Entity(
+        dynamicUpdate = true
+)
 public class UserToken {
 
     @Id

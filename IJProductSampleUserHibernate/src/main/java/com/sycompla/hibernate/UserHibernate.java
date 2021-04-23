@@ -108,9 +108,11 @@ public class UserHibernate {
 
             User tempUser = session.get(User.class, id);
 
+            user.setId(tempUser.getId());
+
             session.beginTransaction();
 
-            session.save(user);
+            session.update(user);
 
             session.getTransaction().commit();
 

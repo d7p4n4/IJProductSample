@@ -13,6 +13,7 @@
         <module name="ObjectServiceTest" />
         <module name="IJProductSampleStringService" />
         <module name="IJProductSampleUserHibernate" />
+        <module name="IJProductSampleUserObjectService" />
         <module name="IJProductSampleHibernate" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
       <module name="IJProductSampleRequest" target="8" />
       <module name="IJProductSampleStringService" target="8" />
       <module name="IJProductSampleUserHibernate" target="8" />
+      <module name="IJProductSampleUserObjectService" target="8" />
       <module name="IJProductSampleUserToken" target="8" />
       <module name="ObjectServiceTest" target="8" />
       <module name="StringServiceTest" target="8" />

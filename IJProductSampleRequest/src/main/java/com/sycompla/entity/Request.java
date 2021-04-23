@@ -4,6 +4,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Request", catalog = "UserDb", schema = "dbo")
+@org.hibernate.annotations.Entity(
+        dynamicUpdate = true
+)
 public class Request {
 
     @Id
