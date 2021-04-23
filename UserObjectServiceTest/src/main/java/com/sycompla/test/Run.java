@@ -1,7 +1,7 @@
 package com.sycompla.test;
 
 import com.sycompla.entity.User;
-import com.sycompla.object.*;
+import com.sycompla.object.user.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

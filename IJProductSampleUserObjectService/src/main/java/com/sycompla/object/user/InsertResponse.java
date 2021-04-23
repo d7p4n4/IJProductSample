@@ -1,15 +1,15 @@
-package com.sycompla.object;
+package com.sycompla.object.user;
 
 import ac4y.service.domain.Ac4yServiceResponse;
 import com.sycompla.entity.User;
 
-public class GetByIdResponse extends Ac4yServiceResponse {
+public class InsertResponse extends Ac4yServiceResponse {
 
     public User user;
 
-    public GetByIdResponse() {}
+    public InsertResponse() {}
 
-    public GetByIdResponse(User user) {
+    public InsertResponse(User user) {
 
         this.user = user;
 
@@ -22,4 +22,4 @@ public class GetByIdResponse extends Ac4yServiceResponse {
     public void setUser(User user) {
         this.user = user;
     }
-} // GetByIdResponse
+} // InsertResponse

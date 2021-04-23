@@ -1,14 +1,14 @@
-package com.sycompla.object;
+package com.sycompla.object.user;
 
 import ac4y.service.domain.Ac4yServiceRequest;
 
-public class GetByGuidRequest extends Ac4yServiceRequest {
+public class DeleteByGuidRequest extends Ac4yServiceRequest {
 
     public String guid;
 
-    public GetByGuidRequest() {}
+    public DeleteByGuidRequest() {}
 
-    public GetByGuidRequest(String guid) {
+    public DeleteByGuidRequest(String guid) {
         this.guid = guid;
     }
 
@@ -19,4 +19,4 @@ public class GetByGuidRequest extends Ac4yServiceRequest {
     public void setGuid(String guid) {
         this.guid = guid;
     }
-} // GetByGuidRequest
+} // DeleteByGuidRequest

@@ -1,4 +1,4 @@
-package com.sycompla.object;
+package com.sycompla.object.user;
 
 import ac4y.service.domain.Ac4yProcessResult;
 import com.sycompla.hibernate.UserHibernate;
