@@ -1,10 +1,7 @@
 package com.sycompla.objectService.category;
 
 import ac4y.service.domain.Ac4yProcessResult;
-import com.sycompla.cap.CategoryHibernateCap;
-import com.sycompla.gson.GsonCap;
-import com.sycompla.objectService.category.GetCategoryByIdRequest;
-import com.sycompla.objectService.category.GetCategoryByIdResponse;
+import com.sycompla.hibernate.CategoryHibernateCap;
 
 public class CategoryObjectServices {
 

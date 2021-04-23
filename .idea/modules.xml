@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleHibernate/IJProductSampleHibernate.iml" filepath="$PROJECT_DIR$/IJProductSampleHibernate/IJProductSampleHibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleObjectService/IJProductSampleObjectService.iml" filepath="$PROJECT_DIR$/IJProductSampleObjectService/IJProductSampleObjectService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IJProductSampleRequest/IJProductSampleRequest.iml" filepath="$PROJECT_DIR$/IJProductSampleRequest/IJProductSampleRequest.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleStringService/IJProductSampleStringService.iml" filepath="$PROJECT_DIR$/IJProductSampleStringService/IJProductSampleStringService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IJProductSampleUserHibernate/IJProductSampleUserHibernate.iml" filepath="$PROJECT_DIR$/IJProductSampleUserHibernate/IJProductSampleUserHibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IJProductSampleUserToken/IJProductSampleUserToken.iml" filepath="$PROJECT_DIR$/IJProductSampleUserToken/IJProductSampleUserToken.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObjectServiceTest/ObjectServiceTest.iml" filepath="$PROJECT_DIR$/ObjectServiceTest/ObjectServiceTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringServiceTest/StringServiceTest.iml" filepath="$PROJECT_DIR$/StringServiceTest/StringServiceTest.iml" />
     </modules>

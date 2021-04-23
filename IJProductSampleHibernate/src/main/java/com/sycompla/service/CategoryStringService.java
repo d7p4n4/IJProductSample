@@ -1,6 +1,6 @@
 package com.sycompla.service;
 
-import com.sycompla.cap.CategoryHibernateCap;
+import com.sycompla.hibernate.CategoryHibernateCap;
 import com.sycompla.entities.Category;
 import com.sycompla.gson.GsonCap;
 

@@ -1,4 +1,4 @@
-package com.sycompla.cap;
+package com.sycompla.hibernate;
 
 import java.util.ArrayList;
 import java.util.List;
