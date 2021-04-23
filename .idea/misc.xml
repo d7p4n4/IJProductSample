@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/IJProductSampleUserHibernate/pom.xml" />
         <option value="$PROJECT_DIR$/IJProductSampleUserObjectService/pom.xml" />
         <option value="$PROJECT_DIR$/UserObjectServiceTest/pom.xml" />
+        <option value="$PROJECT_DIR$/IJProductSampleUserStringService/pom.xml" />
       </list>
     </option>
   </component>
