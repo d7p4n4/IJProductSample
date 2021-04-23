@@ -1,0 +1,11 @@
+com\sycompla\object\UserObjectService.class
+com\sycompla\object\GetListResponse.class
+com\sycompla\object\GetByIdRequest.class
+com\sycompla\object\InsertResponse.class
+com\sycompla\object\UpdateByIdRequest.class
+com\sycompla\object\DeleteRequest.class
+com\sycompla\object\UpdateByIdResponse.class
+com\sycompla\object\InsertRequest.class
+com\sycompla\object\GetByIdResponse.class
+com\sycompla\object\DeleteResponse.class
+com\sycompla\object\GetListRequest.class

@@ -105,7 +105,7 @@ public class UserHibernate {
 
     public Boolean isExistsById(int id) {return this.getById(id) != null;} // isExistsById
 
-    public Boolean isExistsById(String guid) {return this.getByGuid(guid) != null;} // isExistsByGuid
+    public Boolean isExistsByGuid(String guid) {return this.getByGuid(guid) != null;} // isExistsByGuid
 
     public User insert(User user) {
 
@@ -163,7 +163,7 @@ public class UserHibernate {
 
     } // updateById
 
-    public User updateById(User user, String guid) {
+    public User updateByGuid(User user, String guid) {
 
         Session session = factory.openSession();
 

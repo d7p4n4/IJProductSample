@@ -37,7 +37,41 @@ public class UserObjectService {
 
         }
 
-    } // getCategoryById
+    } // getById
+
+    public GetByGuidResponse getByGuid(GetByGuidRequest request) {
+
+        GetByGuidResponse response = new GetByGuidResponse();
+
+        try {
+
+            response.setUser(new UserHibernate().getByGuid(request.getGuid()));
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            1
+                            , "ok"
+                            , null
+                    )
+            );
+
+            return response;
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+            return response;
+
+        }
+
+    } // getByGuid
 
     public GetListResponse getList(GetListRequest request) {
 
@@ -72,6 +106,74 @@ public class UserObjectService {
         }
 
     } // getList
+
+    public IsExistsByIdResponse isExistsById(IsExistsByIdRequest request) {
+
+        IsExistsByIdResponse response = new IsExistsByIdResponse();
+
+        try {
+
+            response.setExists(new UserHibernate().isExistsById(request.getId()));
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            1
+                            , "ok"
+                            , null
+                    )
+            );
+
+            return response;
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+            return response;
+
+        }
+
+    } // IsExistsByIdResponse
+
+    public IsExistsByGuidResponse isExistsByGuid(IsExistsByGuidRequest request) {
+
+        IsExistsByGuidResponse response = new IsExistsByGuidResponse();
+
+        try {
+
+            response.setExists(new UserHibernate().isExistsByGuid(request.getGuid()));
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            1
+                            , "ok"
+                            , null
+                    )
+            );
+
+            return response;
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+            return response;
+
+        }
+
+    } // IsExistsByGuidResponse
 
     public InsertResponse insert(InsertRequest request) {
 
@@ -141,6 +243,40 @@ public class UserObjectService {
 
     } // updateById
 
+    public UpdateByGuidResponse updateByGuid(UpdateByGuidRequest request) {
+
+        UpdateByGuidResponse response = new UpdateByGuidResponse();
+
+        try {
+
+            response.setUser(new UserHibernate().updateByGuid(request.getUser(), request.getGuid()));
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            1
+                            , "ok"
+                            , null
+                    )
+            );
+
+            return response;
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+            return response;
+
+        }
+
+    } // updateByGuid
+
     public DeleteResponse delete(DeleteRequest request) {
 
         DeleteResponse response = new DeleteResponse();
@@ -174,5 +310,39 @@ public class UserObjectService {
         }
 
     } // delete
+
+    public DeleteByGuidResponse deleteByGuid(DeleteByGuidRequest request) {
+
+        DeleteByGuidResponse response = new DeleteByGuidResponse();
+
+        try {
+
+            new UserHibernate().deleteByGuid(request.getGuid());
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            1
+                            , "ok"
+                            , null
+                    )
+            );
+
+            return response;
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+            return response;
+
+        }
+
+    } // deleteByGuid
 
 } // UserObjectService
