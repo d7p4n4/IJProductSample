@@ -3,6 +3,7 @@ package com.sycompla.hibernate;
 import com.sycompla.entity.Request;
 import com.sycompla.entity.User;
 import com.sycompla.entity.UserToken;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -51,11 +52,40 @@ public class UserHibernate {
 
     } // getList
 
+    public User getByGuid(String guid) {
+
+        Session session = factory.openSession();
+
+        User user = null;
+
+        try {
+
+            Query query = session.createQuery("from User user where user.guid = " + guid);
+
+            List<User> userList = query.list();
+
+            if(userList != null && userList.size() > 0) {
+
+                user = userList.get(0);
+
+            }
+
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        } finally {
+            session.close();
+            //factory.close();
+        }
+
+        return user;
+
+    } // getByGuid
+
     public User getById(int id) {
 
         Session session = factory.openSession();
 
-        User user = new User();
+        User user = null;
 
         try {
 
@@ -72,6 +102,10 @@ public class UserHibernate {
         return  user;
 
     } // getById
+
+    public Boolean isExistsById(int id) {return this.getById(id) != null;} // isExistsById
+
+    public Boolean isExistsById(String guid) {return this.getByGuid(guid) != null;} // isExistsByGuid
 
     public User insert(User user) {
 
@@ -116,20 +150,47 @@ public class UserHibernate {
 
             session.getTransaction().commit();
 
-            return user;
-
         } catch (Exception exception) {
 
             exception.printStackTrace();
-
-            return user;
 
         } finally {
             session.close();
             //factory.close();
         }
 
+        return user;
+
     } // updateById
+
+    public User updateById(User user, String guid) {
+
+        Session session = factory.openSession();
+
+        try {
+
+            User tempUser = this.getByGuid(guid);
+
+            user.setId(tempUser.getId());
+
+            session.beginTransaction();
+
+            session.update(user);
+
+            session.getTransaction().commit();
+
+        } catch (Exception exception) {
+
+            exception.printStackTrace();
+
+        } finally {
+            session.close();
+            //factory.close();
+        }
+
+        return user;
+
+    } // updateByGuid
 
     public void delete(int id) {
 
@@ -156,6 +217,32 @@ public class UserHibernate {
         }
 
     } // delete
+
+    public void deleteByGuid(String guid) {
+
+        Session session = factory.openSession();
+
+        try {
+
+            User tempUser = this.getByGuid(guid);
+
+            session.beginTransaction();
+
+            session.delete(tempUser);
+
+            session.getTransaction().commit();
+
+
+        } catch (Exception exception) {
+
+            exception.printStackTrace();
+
+        } finally {
+            session.close();
+            //factory.close();
+        }
+
+    } // deleteByGuid
 
 
 } // UserHibernate

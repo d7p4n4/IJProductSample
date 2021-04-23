@@ -83,8 +83,8 @@ public class Run {
 
     public static void main(String[] args) {
 
-        //new Run().getCategoryById();
-        new Run().getById();
+        new Run().getList();
+        //new Run().getById();
 
     } // main
 

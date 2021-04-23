@@ -9,7 +9,6 @@
         <module name="IJProductSampleObjectService" />
         <module name="StringServiceTest" />
         <module name="UserObjectServiceTest" />
-        <module name="IJProductSampleUserToken" />
         <module name="ObjectServiceTest" />
         <module name="IJProductSampleStringService" />
         <module name="IJProductSampleUserHibernate" />

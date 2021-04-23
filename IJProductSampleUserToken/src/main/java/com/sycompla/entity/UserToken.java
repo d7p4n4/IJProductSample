@@ -1,6 +1,6 @@
 package com.sycompla.entity;
 
-import javax.persistence.*;
+import javax
 
 @Entity
 @Table(name = "UserToken", catalog = "UserTeszt", schema = "dbo")
