@@ -1,0 +1,2 @@
+com\sycompla\entity\UserToken.class
+com\sycompla\hibernate\UserTokenHibernate.class
