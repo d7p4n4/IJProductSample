@@ -18,8 +18,6 @@ public class RequestHibernate {
     public RequestHibernate() {
         this.factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(User.class)
-                .addAnnotatedClass(UserToken.class)
                 .addAnnotatedClass(Request.class)
                 .buildSessionFactory();
 

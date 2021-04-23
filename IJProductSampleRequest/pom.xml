@@ -93,18 +93,6 @@
             <artifactId>c3p0</artifactId>
             <version>0.9.5.2</version>
         </dependency>
-        <dependency>
-            <groupId>sycompla</groupId>
-            <artifactId>IJProductSampleUserHibernate</artifactId>
-            <version>1.1.20210423.1</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>sycompla</groupId>
-            <artifactId>IJProductSampleUserToken</artifactId>
-            <version>1.1.20210423.1</version>
-        </dependency>
     </dependencies>
 
     <build>

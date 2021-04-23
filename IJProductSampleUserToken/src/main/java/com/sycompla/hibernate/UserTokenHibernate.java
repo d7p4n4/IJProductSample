@@ -18,9 +18,7 @@ public class UserTokenHibernate {
     public UserTokenHibernate() {
         this.factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(User.class)
                 .addAnnotatedClass(UserToken.class)
-                .addAnnotatedClass(Request.class)
                 .buildSessionFactory();
 
     }

@@ -9,13 +9,13 @@
         <option value="$PROJECT_DIR$/ObjectServiceTest/pom.xml" />
         <option value="$PROJECT_DIR$/StringServiceTest/pom.xml" />
         <option value="$PROJECT_DIR$/IJProductSampleUserHibernate/pom.xml" />
-        <option value="$PROJECT_DIR$/IJProductSampleUserToken/pom.xml" />
-        <option value="$PROJECT_DIR$/IJProductSampleRequest/pom.xml" />
         <option value="$PROJECT_DIR$/IJProductSampleUserObjectService/pom.xml" />
+        <option value="$PROJECT_DIR$/UserObjectServiceTest/pom.xml" />
+        <option value="$PROJECT_DIR$/IJProductSampleUserToken/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11.0.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

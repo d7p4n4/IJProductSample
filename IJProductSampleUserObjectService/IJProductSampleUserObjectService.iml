@@ -37,7 +37,7 @@
     <orderEntry type="library" name="Maven: com.mchange:c3p0:0.9.5.2" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:mchange-commons-java:0.2.11" level="project" />
     <orderEntry type="module" module-name="IJProductSampleUserToken" />
-    <orderEntry type="module" module-name="IJProductSampleRequest" />
+    <orderEntry type="library" name="Maven: sycompla:IJProductSampleRequest:1.1.20210423.1" level="project" />
     <orderEntry type="library" name="Maven: ac4y.service:ac4yServiceDomain:1.1.20210415.1" level="project" />
     <orderEntry type="library" name="Maven: ac4y.base:ac4yBase4JsonAndXml:1.20190609.1" level="project" />
     <orderEntry type="library" name="Maven: ac4y.base:ac4yBase:1.20190505.1" level="project" />
