@@ -15,7 +15,7 @@ public class Run {
 
         GetByIdResponse response = new UserObjectService()
                 .getById(new GetByIdRequest(
-                        2
+                        255
                 ));
 
         return response;
@@ -42,22 +42,22 @@ public class Run {
 
     } // getList
 
-    public IsExistsByIdResponse isExistsById(IsExistsByIdRequest request) {
+    public IsExistsByIdResponse isExistsById() {
 
         IsExistsByIdResponse response = new UserObjectService()
                 .isExistsById(new IsExistsByIdRequest(
-                        5
+                        55
                 ));
 
         return response;
 
     } // isExistsById
 
-    public IsExistsByGuidResponse isExistsById(IsExistsByGuidRequest request) {
+    public IsExistsByGuidResponse isExistsByGuid() {
 
         IsExistsByGuidResponse response = new UserObjectService()
                 .isExistsByGuid(new IsExistsByGuidRequest(
-                        "tesztguid"
+                        "teszdtguid"
                 ));
 
         return response;
@@ -86,7 +86,7 @@ public class Run {
 
     } // insert
 
-    public UpdateByIdResponse updateById(UpdateByIdRequest request) {
+    public UpdateByIdResponse updateById() {
 
         User updatedUser = new User();
 
@@ -95,7 +95,7 @@ public class Run {
         UpdateByIdResponse response = new UserObjectService()
                 .updateById(new UpdateByIdRequest(
                             updatedUser
-                            , 4
+                            , 63
                         )
                 );
 
@@ -103,22 +103,39 @@ public class Run {
 
     } // updateById
 
-    public DeleteResponse delete(DeleteRequest request) {
+    public UpdateByGuidResponse updateByGuid() {
+
+        User updatedUser = new User();
+
+        updatedUser.setLanguage("updated");
+
+        UpdateByGuidResponse response = new UserObjectService()
+                .updateByGuid(new UpdateByGuidRequest(
+                                "tesztguid"
+                                , updatedUser
+                        )
+                );
+
+        return response;
+
+    } // updateByGuid
+
+    public DeleteResponse delete() {
 
         DeleteResponse response = new UserObjectService()
                 .delete(new DeleteRequest(
-                        8
+                        88
                 ));
 
         return response;
 
     } // delete
 
-    public DeleteByGuidResponse deleteByGuid(DeleteByGuidRequest request) {
+    public DeleteByGuidResponse deleteByGuid() {
 
         DeleteByGuidResponse response = new UserObjectService()
                 .deleteByGuid(new DeleteByGuidRequest(
-                        "tesztguid"
+                        "tesztdguid"
                 ));
 
         return response;
@@ -127,8 +144,17 @@ public class Run {
 
     public static void main(String[] args) {
 
-        new Run().getList();
+        //new Run().getList();
         //new Run().getById();
+        //new Run().getByGuid();
+        //new Run().getById();
+        //new Run().isExistsById();
+        //new Run().isExistsByGuid();
+        //new Run().insert();
+        //new Run().updateById();
+//        new Run().updateByGuid();
+//        new Run().delete();
+        new Run().deleteByGuid();
 
     } // main
 

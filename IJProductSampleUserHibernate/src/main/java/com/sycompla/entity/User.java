@@ -6,9 +6,6 @@ import java.util.Date;
 
 @Entity
 @Table(name = "Userek", catalog = "UserTeszt", schema = "dbo")
-@org.hibernate.annotations.Entity(
-        dynamicUpdate = true
-)
 public class User {
 
     @Id

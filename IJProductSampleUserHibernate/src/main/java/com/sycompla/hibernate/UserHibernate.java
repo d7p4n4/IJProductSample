@@ -9,6 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,7 +61,7 @@ public class UserHibernate {
 
         try {
 
-            Query query = session.createQuery("from User user where user.guid = " + guid);
+            Query query = session.createQuery("from User user where user.guid = '" + guid + "'");
 
             List<User> userList = query.list();
 
@@ -142,13 +143,15 @@ public class UserHibernate {
 
             User tempUser = session.get(User.class, id);
 
-            user.setId(tempUser.getId());
+            this.object2Object(user, tempUser);
 
             session.beginTransaction();
 
-            session.update(user);
+            session.update(tempUser);
 
             session.getTransaction().commit();
+
+            return tempUser;
 
         } catch (Exception exception) {
 
@@ -159,7 +162,7 @@ public class UserHibernate {
             //factory.close();
         }
 
-        return user;
+        return null;
 
     } // updateById
 
@@ -171,13 +174,15 @@ public class UserHibernate {
 
             User tempUser = this.getByGuid(guid);
 
-            user.setId(tempUser.getId());
+            this.object2Object(user, tempUser);
 
             session.beginTransaction();
 
-            session.update(user);
+            session.update(tempUser);
 
             session.getTransaction().commit();
+
+            return tempUser;
 
         } catch (Exception exception) {
 
@@ -188,7 +193,7 @@ public class UserHibernate {
             //factory.close();
         }
 
-        return user;
+        return null;
 
     } // updateByGuid
 
@@ -243,6 +248,24 @@ public class UserHibernate {
         }
 
     } // deleteByGuid
+
+    public void object2Object(Object source, Object target) throws IllegalAccessException, NoSuchFieldException {
+
+        Field[] properties = source.getClass().getDeclaredFields();
+
+        for(int counter = 0; counter < properties.length; counter++) {
+
+            if(properties[counter].get(source) != null && properties[counter].getName() != "id") {
+
+                Object obj = properties[counter].get(source);
+
+                target.getClass().getDeclaredField(properties[counter].getName()).set(target, properties[counter].get(source));
+
+            }
+
+        }
+
+    } // object2Object
 
 
 } // UserHibernate
