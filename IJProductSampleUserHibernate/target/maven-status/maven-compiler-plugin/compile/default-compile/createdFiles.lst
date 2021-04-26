@@ -1,6 +1,6 @@
 com\sycompla\entity\UserToken.class
 com\sycompla\hibernate\UserHibernate.class
-com\sycompla\entity\Request.class
+com\sycompla\entity\RequestToken.class
 com\sycompla\entity\User.class
 com\sycompla\hibernate\UserTokenHibernate.class
 com\sycompla\hibernate\RequestHibernate.class
