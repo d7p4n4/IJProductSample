@@ -5,6 +5,8 @@ import com.sycompla.object.user.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.sql.Timestamp;
+import java.time.Instant;
 import java.util.Date;
 
 public class Run {
@@ -70,8 +72,8 @@ public class Run {
                 .insert(new InsertRequest(
                         new User(
                             "tesztG"
-                                , new Date()
-                                , new Date()
+                                , Timestamp.from(Instant.now())
+                                , null
                                 , "tester János"
                                 , "test@mail.hu"
                                 , "pwd123"

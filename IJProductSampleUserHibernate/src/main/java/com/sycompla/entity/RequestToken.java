@@ -4,10 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Request", catalog = "UserDb", schema = "dbo")
-@org.hibernate.annotations.Entity(
-        dynamicUpdate = true
-)
-public class Request {
+public class RequestToken {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,9 +17,9 @@ public class Request {
     @Column(name = "checkData")
     public String checkData;
 
-    public Request() {}
+    public RequestToken() {}
 
-    public Request(String guid, String checkData) {
+    public RequestToken(String guid, String checkData) {
         this.guid = guid;
         this.checkData = checkData;
     }

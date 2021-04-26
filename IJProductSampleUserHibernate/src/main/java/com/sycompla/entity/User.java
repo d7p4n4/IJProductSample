@@ -45,10 +45,8 @@ public class User {
 
     public User() {}
 
-    public User(String guid, Date createdAt, Date updatedAt, String name, String email, String password, String oAuthToken, String language, String phoneNumber, String userName) {
+    public User(String guid, String name, String email, String password, String oAuthToken, String language, String phoneNumber, String userName) {
         this.guid = guid;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
         this.name = name;
         this.email = email;
         this.password = password;

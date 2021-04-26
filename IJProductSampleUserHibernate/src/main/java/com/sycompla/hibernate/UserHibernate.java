@@ -1,9 +1,8 @@
 package com.sycompla.hibernate;
 
-import com.sycompla.entity.Request;
+import com.sycompla.entity.RequestToken;
 import com.sycompla.entity.User;
 import com.sycompla.entity.UserToken;
-import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -11,6 +10,7 @@ import org.hibernate.query.Query;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class UserHibernate {
@@ -22,7 +22,7 @@ public class UserHibernate {
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(User.class)
                 .addAnnotatedClass(UserToken.class)
-                .addAnnotatedClass(Request.class)
+                .addAnnotatedClass(RequestToken.class)
                 .buildSessionFactory();
 
     }
@@ -112,6 +112,10 @@ public class UserHibernate {
 
         Session session = factory.openSession();
 
+        user.setCreatedAt(new Date());
+
+        user.setUpdatedAt(new Date());
+
         try {
 
             session.beginTransaction();
@@ -143,6 +147,8 @@ public class UserHibernate {
 
             User tempUser = session.get(User.class, id);
 
+            tempUser.setUpdatedAt(new Date());
+
             this.object2Object(user, tempUser);
 
             session.beginTransaction();
@@ -173,6 +179,8 @@ public class UserHibernate {
         try {
 
             User tempUser = this.getByGuid(guid);
+
+            tempUser.setUpdatedAt(new Date());
 
             this.object2Object(user, tempUser);
 
@@ -255,7 +263,9 @@ public class UserHibernate {
 
         for(int counter = 0; counter < properties.length; counter++) {
 
-            if(properties[counter].get(source) != null && properties[counter].getName() != "id") {
+            Field property = properties[counter];
+
+            if(property.get(source) != null && (property.getName() != "id" || property.getName() == "createdAt" || property.getName() == "updatedAt")) {
 
                 Object obj = properties[counter].get(source);
 
