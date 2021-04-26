@@ -37,7 +37,7 @@ public class RequestTokenHibernate {
         try {
 
             Query<RequestToken> theQuery =
-                    session.createQuery("from Request",
+                    session.createQuery("from RequestToken",
                             RequestToken.class);
 
             requestTokenList = theQuery.getResultList();

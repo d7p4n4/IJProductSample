@@ -1,7 +1,7 @@
 package com.sycompla.test.requestToken;
 
-import com.sycompla.entity.User;
-import com.sycompla.object.user.*;
+import com.sycompla.entity.RequestToken;
+import com.sycompla.object.requestToken.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,7 +11,7 @@ public class Run {
 
     public GetByIdResponse getById() {
 
-        GetByIdResponse response = new UserObjectService()
+        GetByIdResponse response = new RequestTokenObjectService()
                 .getById(new GetByIdRequest(
                         255
                 ));
@@ -22,7 +22,7 @@ public class Run {
 
     public GetByGuidResponse getByGuid() {
 
-        GetByGuidResponse response = new UserObjectService()
+        GetByGuidResponse response = new RequestTokenObjectService()
                 .getByGuid(new GetByGuidRequest(
                         "9B77759771EF323AEB9F25EF1D98334F8B8931AD30B3998EF7446A7D1633B8D8DF31BD627411B75B9105643D9FE70B7CEA73BBB3673080EEDB625C195E0F3E68"
                 ));
@@ -33,7 +33,7 @@ public class Run {
 
     public GetListResponse getList() {
 
-        GetListResponse response = new UserObjectService()
+        GetListResponse response = new RequestTokenObjectService()
                 .getList(new GetListRequest());
 
         return  response;
@@ -42,7 +42,7 @@ public class Run {
 
     public IsExistsByIdResponse isExistsById() {
 
-        IsExistsByIdResponse response = new UserObjectService()
+        IsExistsByIdResponse response = new RequestTokenObjectService()
                 .isExistsById(new IsExistsByIdRequest(
                         55
                 ));
@@ -53,9 +53,9 @@ public class Run {
 
     public IsExistsByGuidResponse isExistsByGuid() {
 
-        IsExistsByGuidResponse response = new UserObjectService()
+        IsExistsByGuidResponse response = new RequestTokenObjectService()
                 .isExistsByGuid(new IsExistsByGuidRequest(
-                        "teszdtguid"
+                        "9B77759771EF323AEB9F25dEF1D98334F8B8931AD30B3998EF7446A7D1633B8D8DF31BD627411B75B9105643D9FE70B7CEA73BBB3673080EEDB625C195E0F3E68"
                 ));
 
         return response;
@@ -64,17 +64,11 @@ public class Run {
 
     public InsertResponse insert() {
 
-        InsertResponse response = new UserObjectService()
+        InsertResponse response = new RequestTokenObjectService()
                 .insert(new InsertRequest(
-                        new User(
-                            "tesztG"
-                                , "tester János"
-                                , "test@mail.hu"
-                                , "pwd123"
-                                , "testtoken"
-                                , "magyar"
-                                , "+123456789"
-                                , "uName"
+                        new RequestToken(
+                                "UserGuid"
+                                , "625"
                         )
                 ));
 
@@ -84,14 +78,15 @@ public class Run {
 
     public UpdateByIdResponse updateById() {
 
-        User updatedUser = new User();
+        RequestToken updatedRequestToken = new RequestToken();
 
-        updatedUser.setLanguage("updated");
+        updatedRequestToken.setCheckData("694896851");
 
-        UpdateByIdResponse response = new UserObjectService()
+
+        UpdateByIdResponse response = new RequestTokenObjectService()
                 .updateById(new UpdateByIdRequest(
-                            updatedUser
-                            , 63
+                            updatedRequestToken
+                            , 2
                         )
                 );
 
@@ -101,14 +96,14 @@ public class Run {
 
     public UpdateByGuidResponse updateByGuid() {
 
-        User updatedUser = new User();
+        RequestToken updatedRequestToken = new RequestToken();
 
-        updatedUser.setLanguage("updated");
+        updatedRequestToken.setGuid("UPDATED");
 
-        UpdateByGuidResponse response = new UserObjectService()
+        UpdateByGuidResponse response = new RequestTokenObjectService()
                 .updateByGuid(new UpdateByGuidRequest(
-                                "tesztguid"
-                                , updatedUser
+                                "UserGuid"
+                                , updatedRequestToken
                         )
                 );
 
@@ -118,9 +113,9 @@ public class Run {
 
     public DeleteResponse delete() {
 
-        DeleteResponse response = new UserObjectService()
+        DeleteResponse response = new RequestTokenObjectService()
                 .delete(new DeleteRequest(
-                        88
+                        3
                 ));
 
         return response;
@@ -129,9 +124,9 @@ public class Run {
 
     public DeleteByGuidResponse deleteByGuid() {
 
-        DeleteByGuidResponse response = new UserObjectService()
+        DeleteByGuidResponse response = new RequestTokenObjectService()
                 .deleteByGuid(new DeleteByGuidRequest(
-                        "tesztdguid"
+                        "UPDATED"
                 ));
 
         return response;
@@ -140,16 +135,15 @@ public class Run {
 
     public static void main(String[] args) {
 
-        //new Run().getList();
-        //new Run().getById();
-        //new Run().getByGuid();
-        //new Run().getById();
-        //new Run().isExistsById();
-        //new Run().isExistsByGuid();
-        //new Run().insert();
-        //new Run().updateById();
-//        new Run().updateByGuid();
-//        new Run().delete();
+        new Run().getList();
+        new Run().getById();
+        new Run().getByGuid();
+        new Run().isExistsById();
+        new Run().isExistsByGuid();
+        new Run().insert();
+        new Run().updateById();
+        new Run().updateByGuid();
+        new Run().delete();
         new Run().deleteByGuid();
 
     } // main
