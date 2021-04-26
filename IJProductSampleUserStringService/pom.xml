@@ -48,7 +48,7 @@
         <dependency>
             <groupId>sycompla</groupId>
             <artifactId>IJProductSampleUserObjectService</artifactId>
-            <version>1.1.20210423.1</version>
+            <version>1.1.20210426.1</version>
             <scope>compile</scope>
         </dependency>
 
