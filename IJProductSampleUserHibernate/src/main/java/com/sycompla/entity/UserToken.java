@@ -3,7 +3,7 @@ package com.sycompla.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "UserToken", catalog = "UserTeszt", schema = "dbo")
+@Table(name = "Tokenek", catalog = "UserTeszt", schema = "dbo")
 public class UserToken {
 
     @Id

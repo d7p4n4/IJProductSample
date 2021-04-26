@@ -61,7 +61,7 @@ public class UserTokenHibernate {
 
         try {
 
-            Query query = session.createQuery("from UserToken userToken where userToken.guid = '" + guid + "'");
+            Query query = session.createQuery("from UserToken userToken where userToken.userGuid = '" + guid + "'");
 
             List<UserToken> userTokenList = query.list();
 
