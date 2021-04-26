@@ -25,7 +25,7 @@
     <orderEntry type="library" name="Maven: ac4y.service:ac4yServiceCommon:1.1.20210415.3" level="project" />
     <orderEntry type="library" name="Maven: com.microsoft.sqlserver:mssql-jdbc:8.4.0.jre8" level="project" />
     <orderEntry type="module" module-name="IJProductSampleUserStringService" />
-    <orderEntry type="module" module-name="IJProductSampleUserObjectService" />
+    <orderEntry type="library" name="Maven: sycompla:IJProductSampleUserObjectService:1.1.20210423.1" level="project" />
     <orderEntry type="module" module-name="IJProductSampleUserHibernate" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:slf4j-simple:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.11" level="project" />
