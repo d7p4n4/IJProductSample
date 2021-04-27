@@ -1,4 +1,4 @@
-package com.sycompla.object.compositeService;
+package com.sycompla.composite;
 
 import ac4y.service.domain.Ac4yServiceResponse;
 import com.sycompla.entity.User;

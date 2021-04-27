@@ -1,16 +1,16 @@
-package com.sycompla.object.compositeService;
+package com.sycompla.composite;
 
 import ac4y.service.domain.Ac4yServiceRequest;
 
-public class AttachNewDeviceRequest extends Ac4yServiceRequest {
+public class CheckSerialNumberRequest extends Ac4yServiceRequest {
 
     public String guid;
 
     public String fbToken;
 
-    public AttachNewDeviceRequest() {}
+    public CheckSerialNumberRequest() {}
 
-    public AttachNewDeviceRequest(String guid, String fbToken) {
+    public CheckSerialNumberRequest(String guid, String fbToken) {
         this.guid = guid;
         this.fbToken = fbToken;
     }
@@ -31,4 +31,4 @@ public class AttachNewDeviceRequest extends Ac4yServiceRequest {
         this.fbToken = fbToken;
     }
 
-} // AttachNewDeviceRequest
+} // CheckSerialNumberRequest
