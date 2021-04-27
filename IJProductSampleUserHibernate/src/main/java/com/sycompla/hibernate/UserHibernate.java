@@ -12,6 +12,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 public class UserHibernate {
 
@@ -115,6 +116,8 @@ public class UserHibernate {
         user.setCreatedAt(new Date());
 
         user.setUpdatedAt(new Date());
+
+        user.setGuid(UUID.randomUUID().toString());
 
         try {
 
