@@ -18,6 +18,7 @@ com\sycompla\object\requestToken\DeleteByGuidResponse.class
 com\sycompla\object\requestToken\RequestTokenObjectService.class
 com\sycompla\object\userToken\DeleteByGuidResponse.class
 com\sycompla\object\requestToken\GetByGuidResponse.class
+com\sycompla\object\userToken\IsExistsByFbTokenRequest.class
 com\sycompla\object\userToken\UpdateByIdRequest.class
 com\sycompla\object\userToken\UpdateByIdResponse.class
 com\sycompla\object\userToken\DeleteByGuidRequest.class
@@ -43,12 +44,15 @@ com\sycompla\object\requestToken\GetByGuidRequest.class
 com\sycompla\object\userToken\GetByGuidRequest.class
 com\sycompla\object\requestToken\GetListResponse.class
 com\sycompla\object\cycleTimeTest\InsertResponse.class
+com\sycompla\object\userToken\GetByFbTokenRequest.class
 com\sycompla\object\requestToken\InsertRequest.class
 com\sycompla\object\cycleTimeTest\CycleTimeTestObjectService.class
 com\sycompla\object\cycleTimeTest\GetListResponse.class
 com\sycompla\object\userToken\UserTokenObjectService.class
 com\sycompla\object\requestToken\IsExistsByGuidRequest.class
 com\sycompla\object\userToken\GetListResponse.class
+com\sycompla\object\userToken\IsExistsByFbTokenResponse.class
+com\sycompla\object\userToken\GetByFbTokenResponse.class
 com\sycompla\object\requestToken\DeleteRequest.class
 com\sycompla\object\requestToken\IsExistsByIdRequest.class
 com\sycompla\object\cycleTimeTest\GetByGuidRequest.class

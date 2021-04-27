@@ -75,6 +75,40 @@ public class UserTokenObjectService {
 
     } // getByGuid
 
+    public GetByFbTokenResponse getByFbToken(GetByFbTokenRequest request) {
+
+        GetByFbTokenResponse response = new GetByFbTokenResponse();
+
+        try {
+
+            response.setUserToken(new UserTokenHibernate().getByFbToken(request.getFbToken()));
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            1
+                            , "ok"
+                            , null
+                    )
+            );
+
+            return response;
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+            return response;
+
+        }
+
+    } // getByFbToken
+
     public GetListResponse getList(GetListRequest request) {
 
         GetListResponse response = new GetListResponse();
@@ -154,6 +188,52 @@ public class UserTokenObjectService {
         }
 
     } // IsExistsByIdResponse
+
+    public IsExistsByFbTokenResponse isExistsByFbToken(IsExistsByFbTokenRequest request) {
+
+        IsExistsByFbTokenResponse response = new IsExistsByFbTokenResponse();
+
+        try {
+
+            if(new UserTokenHibernate().isExistsByFbToken(request.getFbToken())) {
+
+                response.setResult(
+                        new Ac4yProcessResult(
+                                1
+                                , "exists"
+                                , null
+                        )
+                );
+
+            } else {
+
+                response.setResult(
+                        new Ac4yProcessResult(
+                                -1
+                                , "not exists"
+                                , null
+                        )
+                );
+
+            }
+
+            return response;
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+            return response;
+
+        }
+
+    } // IsExistsByFbToken
 
     public IsExistsByGuidResponse isExistsByGuid(IsExistsByGuidRequest request) {
 

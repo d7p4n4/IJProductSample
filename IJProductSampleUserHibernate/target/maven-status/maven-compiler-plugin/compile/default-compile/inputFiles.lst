@@ -1,6 +1,8 @@
 D:\Server\IntellijWorkSpace\IJProductSample\IJProductSampleUserHibernate\src\main\java\com\sycompla\entity\RequestToken.java
 D:\Server\IntellijWorkSpace\IJProductSample\IJProductSampleUserHibernate\src\main\java\com\sycompla\hibernate\UserHibernate.java
 D:\Server\IntellijWorkSpace\IJProductSample\IJProductSampleUserHibernate\src\main\java\com\sycompla\hibernate\RequestTokenHibernate.java
+D:\Server\IntellijWorkSpace\IJProductSample\IJProductSampleUserHibernate\src\main\java\com\sycompla\hibernate\CycleTimeTestHibernate.java
 D:\Server\IntellijWorkSpace\IJProductSample\IJProductSampleUserHibernate\src\main\java\com\sycompla\entity\User.java
 D:\Server\IntellijWorkSpace\IJProductSample\IJProductSampleUserHibernate\src\main\java\com\sycompla\entity\UserToken.java
+D:\Server\IntellijWorkSpace\IJProductSample\IJProductSampleUserHibernate\src\main\java\com\sycompla\entity\CycleTimeTest.java
 D:\Server\IntellijWorkSpace\IJProductSample\IJProductSampleUserHibernate\src\main\java\com\sycompla\hibernate\UserTokenHibernate.java

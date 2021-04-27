@@ -82,6 +82,35 @@ public class UserTokenHibernate {
 
     } // getByGuid
 
+    public UserToken getByFbToken(String fbToken) {
+
+        Session session = factory.openSession();
+
+        UserToken userToken = null;
+
+        try {
+
+            Query query = session.createQuery("from UserToken userToken where userToken.fbToken = '" + fbToken + "'");
+
+            List<UserToken> userTokenList = query.list();
+
+            if(userTokenList != null && userTokenList.size() > 0) {
+
+                userToken = userTokenList.get(0);
+
+            }
+
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        } finally {
+            session.close();
+            //factory.close();
+        }
+
+        return userToken;
+
+    } // getByFbToken
+
     public UserToken getById(int id) {
 
         Session session = factory.openSession();
@@ -107,6 +136,8 @@ public class UserTokenHibernate {
     public Boolean isExistsById(int id) {return this.getById(id) != null;} // isExistsById
 
     public Boolean isExistsByGuid(String guid) {return this.getByGuid(guid) != null;} // isExistsByGuid
+
+    public Boolean isExistsByFbToken(String fbToken) {return this.getByFbToken(fbToken) != null;} // isExistsByFbToken
 
     public UserToken insert(UserToken userToken) {
 
