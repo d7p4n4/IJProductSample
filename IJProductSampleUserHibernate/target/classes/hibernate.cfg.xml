@@ -14,7 +14,9 @@
 
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">1</property>
-
+<!--
+        <property name="hibernate.hbm2ddl.auto">update</property>
+-->
         <!-- Select our SQL dialect -->
         <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
 

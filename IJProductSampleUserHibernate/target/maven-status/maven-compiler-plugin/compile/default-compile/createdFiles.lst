@@ -2,5 +2,7 @@ com\sycompla\entity\UserToken.class
 com\sycompla\hibernate\UserHibernate.class
 com\sycompla\entity\RequestToken.class
 com\sycompla\hibernate\RequestTokenHibernate.class
+com\sycompla\hibernate\CycleTimeTestHibernate.class
+com\sycompla\entity\CycleTimeTest.class
 com\sycompla\entity\User.class
 com\sycompla\hibernate\UserTokenHibernate.class
