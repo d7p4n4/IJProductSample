@@ -12,8 +12,7 @@ public class AuthenticationRequest extends Ac4yServiceRequest {
 
     public AuthenticationRequest() {}
 
-    public AuthenticationRequest(int id, String checkData, String fbToken) {
-        this.id = id;
+    public AuthenticationRequest(String checkData, String fbToken) {
         this.checkData = checkData;
         this.fbToken = fbToken;
     }

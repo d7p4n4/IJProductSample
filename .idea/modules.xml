@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleCompositeService/IJProductSampleCompositeService.iml" filepath="$PROJECT_DIR$/IJProductSampleCompositeService/IJProductSampleCompositeService.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleHibernate/IJProductSampleHibernate.iml" filepath="$PROJECT_DIR$/IJProductSampleHibernate/IJProductSampleHibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleObjectService/IJProductSampleObjectService.iml" filepath="$PROJECT_DIR$/IJProductSampleObjectService/IJProductSampleObjectService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IJProductSampleRestServiceOnTheFly/IJProductSampleRestServiceOnTheFly.iml" filepath="$PROJECT_DIR$/IJProductSampleRestServiceOnTheFly/IJProductSampleRestServiceOnTheFly.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleStringService/IJProductSampleStringService.iml" filepath="$PROJECT_DIR$/IJProductSampleStringService/IJProductSampleStringService.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleUserHibernate/IJProductSampleUserHibernate.iml" filepath="$PROJECT_DIR$/IJProductSampleUserHibernate/IJProductSampleUserHibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleUserObjectService/IJProductSampleUserObjectService.iml" filepath="$PROJECT_DIR$/IJProductSampleUserObjectService/IJProductSampleUserObjectService.iml" />

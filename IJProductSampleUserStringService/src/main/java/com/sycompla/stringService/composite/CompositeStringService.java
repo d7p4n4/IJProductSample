@@ -18,7 +18,7 @@ public class CompositeStringService {
     public String getUserFromByToken(String request) {
 
         return new CompositeService().getUserFromByToken(
-                (GetUserFromByTokenRequest) new GetByFbTokenRequest().getFromJson(request)
+                (GetUserFromByTokenRequest) new GetUserFromByTokenRequest().getFromJson(request)
         ).getAsJson();
 
     } // getUserFromByToken

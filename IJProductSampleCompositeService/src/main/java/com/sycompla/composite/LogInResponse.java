@@ -1,18 +1,19 @@
 package com.sycompla.composite;
 
 import ac4y.service.domain.Ac4yServiceResponse;
+import com.sycompla.entity.RequestToken;
 
 public class LogInResponse extends Ac4yServiceResponse {
 
     public String fbToken;
 
-    public AuthenticationRequest authenticationRequest;
+    public RequestToken requestToken;
 
     public LogInResponse() {}
 
-    public LogInResponse(String fbToken, AuthenticationRequest authenticationRequest) {
+    public LogInResponse(String fbToken, RequestToken authenticationRequest) {
         this.fbToken = fbToken;
-        this.authenticationRequest = authenticationRequest;
+        this.requestToken = authenticationRequest;
     }
 
     public String getFbToken() {
@@ -23,11 +24,11 @@ public class LogInResponse extends Ac4yServiceResponse {
         this.fbToken = fbToken;
     }
 
-    public AuthenticationRequest getAuthenticationRequest() {
-        return authenticationRequest;
+    public RequestToken getRequestToken() {
+        return requestToken;
     }
 
-    public void setAuthenticationRequest(AuthenticationRequest authenticationRequest) {
-        this.authenticationRequest = authenticationRequest;
+    public void setRequestToken(RequestToken requestToken) {
+        this.requestToken = requestToken;
     }
 } // LogInResponse

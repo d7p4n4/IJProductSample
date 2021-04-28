@@ -7,16 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="IJProductSampleCompositeService" />
-        <module name="IJProductSampleObjectService" />
-        <module name="UserObjectServiceTest" />
         <module name="StringServiceTest" />
         <module name="IJProductSampleUserStringService" />
         <module name="ObjectServiceTest" />
         <module name="IJProductSampleStringService" />
         <module name="UserStringService" />
         <module name="IJProductSampleUserHibernate" />
-        <module name="IJProductSampleUserObjectService" />
         <module name="IJProductSampleHibernate" />
+        <module name="IJProductSampleObjectService" />
+        <module name="UserObjectServiceTest" />
+        <module name="IJProductSampleRestServiceOnTheFly" />
+        <module name="IJProductSampleUserObjectService" />
         <module name="CompositeServiceTest" />
       </profile>
     </annotationProcessing>
@@ -26,6 +27,7 @@
       <module name="IJProductSampleHibernate" target="8" />
       <module name="IJProductSampleObjectService" target="8" />
       <module name="IJProductSampleRequest" target="8" />
+      <module name="IJProductSampleRestServiceOnTheFly" target="8" />
       <module name="IJProductSampleStringService" target="8" />
       <module name="IJProductSampleUserHibernate" target="8" />
       <module name="IJProductSampleUserObjectService" target="8" />

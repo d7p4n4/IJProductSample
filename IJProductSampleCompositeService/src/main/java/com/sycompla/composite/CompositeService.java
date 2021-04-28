@@ -124,7 +124,7 @@ public class CompositeService {
                 response.setResult(
                         new Ac4yProcessResult(
                                 -1
-                                , "létezik a token"
+                                , "nem létezik a token"
                                 , null
                         )
                 );
@@ -388,7 +388,7 @@ public class CompositeService {
                                     getUserFromByTokenResponse.getUser().getGuid()
                             ));
 
-                    if(isExistsGuidResponseRequestToken.getResult().getCode() == 1) {
+                    if(isExistsGuidResponseRequestToken.getResult().getCode() == -1) {
 
                         com.sycompla.object.requestToken.InsertResponse insertResponseRequestToken = new RequestTokenObjectService()
                                 .insert(new com.sycompla.object.requestToken.InsertRequest(
@@ -396,6 +396,8 @@ public class CompositeService {
                                 ));
 
                         if(insertResponseRequestToken.getResult().getCode() == 1) {
+
+                            response.setRequestToken(requestToken);
 
                             response.setResult(
                                     new Ac4yProcessResult(
@@ -429,10 +431,12 @@ public class CompositeService {
 
                         if(updateByGuidResponseRequestToken.getResult().getCode() == 1) {
 
+                            response.setRequestToken(requestToken);
+
                             response.setResult(
                                     new Ac4yProcessResult(
                                             1
-                                            , "sikeres login"
+                                            , "sikeres login checkData frissitéssel"
                                             , null
                                     )
                             );
