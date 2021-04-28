@@ -7,7 +7,7 @@
     <groupId>sycompla</groupId>
     <artifactId>IJProductSampleCompositeService</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.20210427.1</version>
+    <version>1.1.20210428.1</version>
 
     <repositories>
         <repository>
@@ -28,6 +28,12 @@
     </distributionManagement>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.9.1</version>
+        </dependency>
 
         <dependency>
             <groupId>ac4y.service</groupId>

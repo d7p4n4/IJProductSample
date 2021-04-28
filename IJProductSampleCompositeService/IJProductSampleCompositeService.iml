@@ -11,6 +11,11 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:4.9.1" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okio:okio:2.8.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.4.10" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Maven: ac4y.service:ac4yServiceDomain:1.1.20210415.1" level="project" />
     <orderEntry type="library" name="Maven: ac4y.base:ac4yBase4JsonAndXml:1.20190609.1" level="project" />
     <orderEntry type="library" name="Maven: ac4y.base:ac4yBase:1.20190505.1" level="project" />

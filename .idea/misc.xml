@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/IJProductSampleUserStringService/pom.xml" />
         <option value="$PROJECT_DIR$/UserStringService/pom.xml" />
         <option value="$PROJECT_DIR$/IJProductSampleCompositeService/pom.xml" />
+        <option value="$PROJECT_DIR$/CompositeServiceTest/pom.xml" />
       </list>
     </option>
   </component>

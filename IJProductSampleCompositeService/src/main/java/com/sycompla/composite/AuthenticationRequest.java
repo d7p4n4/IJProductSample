@@ -6,15 +6,15 @@ public class AuthenticationRequest extends Ac4yServiceRequest {
 
     public int id;
 
-    public String guid;
+    public String checkData;
 
     public String fbToken;
 
     public AuthenticationRequest() {}
 
-    public AuthenticationRequest(int id, String guid, String fbToken) {
+    public AuthenticationRequest(int id, String checkData, String fbToken) {
         this.id = id;
-        this.guid = guid;
+        this.checkData = checkData;
         this.fbToken = fbToken;
     }
 
@@ -26,12 +26,12 @@ public class AuthenticationRequest extends Ac4yServiceRequest {
         this.id = id;
     }
 
-    public String getGuid() {
-        return guid;
+    public String getCheckData() {
+        return checkData;
     }
 
-    public void setGuid(String guid) {
-        this.guid = guid;
+    public void setCheckData(String checkData) {
+        this.checkData = checkData;
     }
 
     public String getFbToken() {

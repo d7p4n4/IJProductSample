@@ -12,10 +12,9 @@ import com.sycompla.object.user.IsExistsByGuidRequest;
 import com.sycompla.object.user.IsExistsByGuidResponse;
 import com.sycompla.object.user.UserObjectService;
 import com.sycompla.object.userToken.*;
+import okhttp3.*;
 
 import java.util.Random;
-
-import static javafx.scene.input.KeyCode.R;
 
 public class CompositeService {
 
@@ -493,5 +492,54 @@ public class CompositeService {
         return response;
 
     } // logIn
+
+    public AuthenticationResponse authentication(AuthenticationRequest request) {
+
+        AuthenticationResponse response = new AuthenticationResponse();
+
+        OkHttpClient client = new OkHttpClient().newBuilder()
+                .build();
+        MediaType mediaType = MediaType.parse("application/json");
+        RequestBody body = RequestBody.create(mediaType, "{\r\n    \"to\": \"" + request.getFbToken() + "\"\r\n\r\n    , \"data\": {\r\n        \"checkData\": \"" + request.getCheckData() + "\"\r\n    }\r\n}");
+        Request requestOk = new Request.Builder()
+                .url("https://fcm.googleapis.com/fcm/send")
+                .method("POST", body)
+                .addHeader("Authorization", "key=AAAAMrfsOZQ:APA91bE_BRElbjcU7XZyAZn6Yw8C8bhOS1vd3gWGch9am14IepEIJleW_ZKGACIyGzz3gxuQpLwVUcZuZcsRWg7k0UbnJ3_SWL87tCT41I6ALga7lnANK-WlhV94mOn5b08mIVaVv1Dx")
+                .addHeader("Content-Type", "application/json")
+                .build();
+        Call call = client.newCall(requestOk);
+
+
+        try {
+
+            Response responseClient = call.execute();
+
+            ResponseBody responseBody = responseClient.body();
+
+            System.out.println(responseBody);
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            1
+                            , "ok"
+                            , null
+                    )
+            );
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+        }
+
+        return response;
+
+    }  // authentication
 
 } // CompositeService

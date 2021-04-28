@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CompositeServiceTest/CompositeServiceTest.iml" filepath="$PROJECT_DIR$/CompositeServiceTest/CompositeServiceTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleCompositeService/IJProductSampleCompositeService.iml" filepath="$PROJECT_DIR$/IJProductSampleCompositeService/IJProductSampleCompositeService.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleHibernate/IJProductSampleHibernate.iml" filepath="$PROJECT_DIR$/IJProductSampleHibernate/IJProductSampleHibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/IJProductSampleObjectService/IJProductSampleObjectService.iml" filepath="$PROJECT_DIR$/IJProductSampleObjectService/IJProductSampleObjectService.iml" />

@@ -7,7 +7,7 @@
     <groupId>sycompla</groupId>
     <artifactId>IJProductSampleUserStringService</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.20210427.1</version>
+    <version>1.1.20210428.1</version>
 
     <repositories>
         <repository>
@@ -50,6 +50,12 @@
             <groupId>sycompla</groupId>
             <artifactId>IJProductSampleUserObjectService</artifactId>
             <version>1.1.20210427.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>sycompla</groupId>
+            <artifactId>IJProductSampleCompositeService</artifactId>
+            <version>1.1.20210428.1</version>
             <scope>compile</scope>
         </dependency>
 
