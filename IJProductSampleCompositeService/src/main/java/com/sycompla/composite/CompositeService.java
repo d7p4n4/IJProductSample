@@ -1,7 +1,9 @@
 package com.sycompla.composite;
 
 import ac4y.service.domain.Ac4yProcessResult;
+import com.sycompla.entity.RequestToken;
 import com.sycompla.entity.UserToken;
+import com.sycompla.object.requestToken.RequestTokenObjectService;
 import com.sycompla.object.user.GetByGuidRequest;
 import com.sycompla.object.user.GetByGuidResponse;
 import com.sycompla.object.user.InsertRequest;
@@ -10,6 +12,10 @@ import com.sycompla.object.user.IsExistsByGuidRequest;
 import com.sycompla.object.user.IsExistsByGuidResponse;
 import com.sycompla.object.user.UserObjectService;
 import com.sycompla.object.userToken.*;
+
+import java.util.Random;
+
+import static javafx.scene.input.KeyCode.R;
 
 public class CompositeService {
 
@@ -348,5 +354,144 @@ public class CompositeService {
         return response;
 
     } // signUp
+
+    public LogInResponse logIn(LogInRequest request) {
+
+        LogInResponse response = new LogInResponse();
+
+        try {
+
+            IsUnknownOrInvalidTokenResponse isUnknownOrInvalidTokenResponse = isUnknownOrInvalidToken(
+                    new IsUnknownOrInvalidTokenRequest(
+                        request.getFbToken()
+                )
+            );
+
+            if(isUnknownOrInvalidTokenResponse.getResult().getCode() == -1) {
+
+                GetUserFromByTokenResponse getUserFromByTokenResponse = getUserFromByToken(
+                        new GetUserFromByTokenRequest(
+                                request.getFbToken()
+                        )
+                );
+
+                if(getUserFromByTokenResponse.getResult().getCode() == 1) {
+
+                    int checkData = new Random().nextInt();
+
+                    RequestToken requestToken = new RequestToken(
+                            getUserFromByTokenResponse.getUser().getGuid()
+                            , Integer.toString(checkData)
+                    );
+
+                    com.sycompla.object.requestToken.IsExistsByGuidResponse isExistsGuidResponseRequestToken = new RequestTokenObjectService()
+                            .isExistsByGuid(new com.sycompla.object.requestToken.IsExistsByGuidRequest(
+                                    getUserFromByTokenResponse.getUser().getGuid()
+                            ));
+
+                    if(isExistsGuidResponseRequestToken.getResult().getCode() == 1) {
+
+                        com.sycompla.object.requestToken.InsertResponse insertResponseRequestToken = new RequestTokenObjectService()
+                                .insert(new com.sycompla.object.requestToken.InsertRequest(
+                                        requestToken
+                                ));
+
+                        if(insertResponseRequestToken.getResult().getCode() == 1) {
+
+                            response.setResult(
+                                    new Ac4yProcessResult(
+                                            1
+                                            , "sikeres login"
+                                            , null
+                                    )
+                            );
+
+                        } else {
+
+                            response.setResult(
+                                    new Ac4yProcessResult(
+                                            -1
+                                            , "a request token insert nem sikerült"
+                                            , null
+                                    )
+                            );
+
+                        }
+
+                        return response;
+
+                    } else {
+
+                        com.sycompla.object.requestToken.UpdateByGuidResponse updateByGuidResponseRequestToken = new RequestTokenObjectService()
+                                .updateByGuid(new com.sycompla.object.requestToken.UpdateByGuidRequest(
+                                        requestToken.getGuid()
+                                        , requestToken
+                                ));
+
+                        if(updateByGuidResponseRequestToken.getResult().getCode() == 1) {
+
+                            response.setResult(
+                                    new Ac4yProcessResult(
+                                            1
+                                            , "sikeres login"
+                                            , null
+                                    )
+                            );
+
+                        } else {
+
+                            response.setResult(
+                                    new Ac4yProcessResult(
+                                            -1
+                                            , "a request token update nem sikerült"
+                                            , null
+                                    )
+                            );
+
+                        }
+
+                        return response;
+
+                    }
+
+                } else {
+
+                    response.setResult(
+                            new Ac4yProcessResult(
+                                    -1
+                                    , "nincs az adott tokennel user"
+                                    , null
+                            )
+                    );
+
+                }
+
+            } else {
+
+                response.setResult(
+                        new Ac4yProcessResult(
+                                -1
+                                , "a token ismeretlen vagy lejárt"
+                                , null
+                        )
+                );
+
+            }
+
+        } catch (Exception exception) {
+
+            response.setResult(
+                    new Ac4yProcessResult(
+                            -1
+                            , exception.getMessage()
+                            , null
+                    )
+            );
+
+        }
+
+        return response;
+
+    } // logIn
 
 } // CompositeService
