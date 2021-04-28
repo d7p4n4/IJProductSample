@@ -6,12 +6,18 @@ import ac4y.indicator.service.object.transfer.TransferRequest;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
+import com.sycompla.composite.*;
+import com.sycompla.object.user.UpdateByGuidRequest;
+import com.sycompla.object.user.UserObjectService;
+import com.sycompla.object.userToken.IsExistsByFbTokenRequest;
+import com.sycompla.object.userToken.UserTokenObjectService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.util.stream.Collectors;
 
@@ -57,17 +63,15 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 								Collectors.joining("\n")
 						);
 
-		//Object d2 = request.getRequestBody();
-
 		return requestBody;
 
 	} // getPostRequest
 
-	public void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 
 		Ac4yIndicatorHttpService ac4yIndicatorHttpService =
 			new Ac4yIndicatorHttpService(
-					Integer.valueOf(args[0]) //new Ac4yTennisChampyHttpService().getPort()
+					Integer.valueOf(8002) //new Ac4yTennisChampyHttpService().getPort()
 			);
 
 		HttpServer server =
@@ -78,7 +82,15 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 				,0
 			);
 
-		server.createContext("/transfer", ac4yIndicatorHttpService.new Transfer());
+		server.createContext("/composite/isunknownorinvalidtoken", ac4yIndicatorHttpService.new IsUnknownOrInvalidToken());
+		server.createContext("/composite/acceptauthentication", ac4yIndicatorHttpService.new AcceptAuthentication());
+		server.createContext("/composite/signup", ac4yIndicatorHttpService.new SignUp());
+		server.createContext("/composite/login", ac4yIndicatorHttpService.new LogIn());
+		server.createContext("/composite/authentication", ac4yIndicatorHttpService.new Authentication());
+		server.createContext("/composite/istokenexists", ac4yIndicatorHttpService.new IsTokenExists());
+		server.createContext("/composite/updateuser", ac4yIndicatorHttpService.new UpdateUserByGuid());
+		server.createContext("/composite/getuserfrombytoken", ac4yIndicatorHttpService.new GetUserFromByToken());
+		server.createContext("/composite/getuserguidbytoken", ac4yIndicatorHttpService.new GetUserGuidByToken());
 
 		server.setExecutor(null); // creates a default executor
 
@@ -86,9 +98,9 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	} // main
 
-	class Transfer implements HttpHandler {
+	class IsUnknownOrInvalidToken implements HttpHandler {
 
-	    public void handle(HttpExchange exchange) throws IOException {
+		public void handle(HttpExchange exchange) throws IOException {
 
 	    	exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
 
@@ -99,8 +111,8 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 				LOG.info("\nrequest:\n"+request);
 
 				String response =
-						new Ac4yIndicatorObjectService().transfer(
-							(TransferRequest) new TransferRequest().getFromJson(request)
+						new CompositeService().isUnknownOrInvalidToken(
+							(IsUnknownOrInvalidTokenRequest) new IsUnknownOrInvalidTokenRequest().getFromJson(request)
 						).getAsJson();
 
 				LOG.info("\nresponse:\n"+response);
@@ -119,6 +131,250 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			}
 		} // handle
 
-	} // Transfer
+	} // IsUnknownOrInvalidToken
+
+	class AcceptAuthentication implements HttpHandler {
+
+		public void handle(HttpExchange exchange) throws IOException {
+
+			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+
+			try {
+
+				String request = getPostRequest(exchange);
+
+				LOG.info("\nrequest:\n"+request);
+
+				String response =
+						new CompositeService().acceptAuthentication(
+								(AcceptAuthenticationRequest) new AcceptAuthenticationRequest().getFromJson(request)
+						).getAsJson();
+
+				LOG.info("\nresponse:\n"+response);
+
+				writeResponse(
+						exchange
+						,response
+				);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				writeResponse(
+						exchange
+						,"{\"error\":\""+e.getLocalizedMessage()+"\"}"
+				);
+			}
+		} // handle
+
+	} // AcceptAuthentication
+
+	class SignUp implements HttpHandler {
+
+		public void handle(HttpExchange exchange) throws IOException {
+
+			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+
+			try {
+
+				String request = getPostRequest(exchange);
+
+				LOG.info("\nrequest:\n"+request);
+
+				String response =
+						new CompositeService().signUp(
+								(SignUpRequest) new SignUpRequest().getFromJson(request)
+						).getAsJson();
+
+				LOG.info("\nresponse:\n"+response);
+
+				writeResponse(
+						exchange
+						,response
+				);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				writeResponse(
+						exchange
+						,"{\"error\":\""+e.getLocalizedMessage()+"\"}"
+				);
+			}
+		} // handle
+
+	} // SignUp
+
+	class LogIn implements HttpHandler {
+
+		public void handle(HttpExchange exchange) throws IOException {
+
+			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+
+			try {
+
+				String request = getPostRequest(exchange);
+
+				LOG.info("\nrequest:\n"+request);
+
+				String response =
+						new CompositeService().logIn(
+								(LogInRequest) new LogInRequest().getFromJson(request)
+						).getAsJson();
+
+				LOG.info("\nresponse:\n"+response);
+
+				writeResponse(
+						exchange
+						,response
+				);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				writeResponse(
+						exchange
+						,"{\"error\":\""+e.getLocalizedMessage()+"\"}"
+				);
+			}
+		} // handle
+
+	} // LogIn
+
+	class Authentication implements HttpHandler {
+
+		public void handle(HttpExchange exchange) throws IOException {
+
+			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+
+			try {
+
+				String request = getPostRequest(exchange);
+
+				LOG.info("\nrequest:\n"+request);
+
+				String response =
+						new CompositeService().authentication(
+								(AuthenticationRequest) new AuthenticationRequest().getFromJson(request)
+						).getAsJson();
+
+				LOG.info("\nresponse:\n"+response);
+
+				writeResponse(
+						exchange
+						,response
+				);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				writeResponse(
+						exchange
+						,"{\"error\":\""+e.getLocalizedMessage()+"\"}"
+				);
+			}
+		} // handle
+
+	} // Authentication
+
+	class IsTokenExists implements HttpHandler {
+
+		public void handle(HttpExchange exchange) throws IOException {
+
+			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+
+			try {
+
+				String request = getPostRequest(exchange);
+
+				LOG.info("\nrequest:\n"+request);
+
+				String response =
+						new UserTokenObjectService().isExistsByFbToken(
+								(IsExistsByFbTokenRequest) new IsExistsByFbTokenRequest().getFromJson(request)
+						).getAsJson();
+
+				LOG.info("\nresponse:\n"+response);
+
+				writeResponse(
+						exchange
+						,response
+				);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				writeResponse(
+						exchange
+						,"{\"error\":\""+e.getLocalizedMessage()+"\"}"
+				);
+			}
+		} // handle
+
+	} // IsTokenExists
+
+	class UpdateUserByGuid implements HttpHandler {
+
+		public void handle(HttpExchange exchange) throws IOException {
+
+			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+
+			try {
+
+				String request = getPostRequest(exchange);
+
+				LOG.info("\nrequest:\n"+request);
+
+				String response =
+						new UserObjectService().updateByGuid(
+								(UpdateByGuidRequest) new UpdateByGuidRequest().getFromJson(request)
+						).getAsJson();
+
+				LOG.info("\nresponse:\n"+response);
+
+				writeResponse(
+						exchange
+						,response
+				);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				writeResponse(
+						exchange
+						,"{\"error\":\""+e.getLocalizedMessage()+"\"}"
+				);
+			}
+		} // handle
+
+	} // UpdateUserByGuid
+
+	public class GetUserFromByToken implements HttpHandler {
+
+		public void handle(HttpExchange aHttpExchange) throws IOException {
+
+			writeResponse(
+					aHttpExchange
+					, new CompositeService().getUserFromByToken(
+							(GetUserFromByTokenRequest) new GetUserFromByTokenRequest().getFromJson(
+									"{'fbToken': " + getParameterValue(aHttpExchange, "request") + "}"
+							)
+					).getAsJson()
+			);
+
+		} // handle
+
+	} // GetUserFromByToken
+
+	public class GetUserGuidByToken implements HttpHandler {
+
+		public void handle(HttpExchange aHttpExchange) throws IOException {
+
+			writeResponse(
+					aHttpExchange
+					, new CompositeService().getUserGuidByToken(
+							(GetUserGuidByTokenRequest) new GetUserGuidByTokenRequest().getFromJson(
+									getParameterValue(aHttpExchange, "request")
+							)
+					).getAsJson()
+			);
+
+		} // handle
+
+	} // GetUserFromByToken
 
 } // Ac4yIndicatorHttpService

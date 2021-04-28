@@ -522,6 +522,8 @@ public class CompositeService {
 
             System.out.println(responseBody);
 
+            responseBody.close();
+
             response.setResult(
                     new Ac4yProcessResult(
                             1

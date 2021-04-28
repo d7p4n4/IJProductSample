@@ -7,7 +7,7 @@
     <groupId>sycompla</groupId>
     <artifactId>IJProductSampleRestServiceOnTheFly</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.20210428.1</version>.
+    <version>1.1.20210428.1</version>
 
     <repositories>
         <repository>
@@ -38,12 +38,6 @@
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-client</artifactId>
             <version>1.19</version>
-        </dependency>
-
-        <dependency>
-            <groupId>ac4y.service</groupId>
-            <artifactId>httpHandler</artifactId>
-            <version>1.20190609.1</version>
         </dependency>
 
         <dependency>
@@ -81,10 +75,17 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>8.4.0.jre8</version>
         </dependency>
+
         <dependency>
-            <groupId>ac4y.base</groupId>
-            <artifactId>ac4yBase</artifactId>
-            <version>1.20190505.1</version>
+            <groupId>sycompla</groupId>
+            <artifactId>IJProductSampleCompositeService</artifactId>
+            <version>1.1.20210428.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>sycompla</groupId>
+            <artifactId>IJProductSampleUserObjectService</artifactId>
+            <version>1.1.20210427.1</version>
             <scope>compile</scope>
         </dependency>
 
