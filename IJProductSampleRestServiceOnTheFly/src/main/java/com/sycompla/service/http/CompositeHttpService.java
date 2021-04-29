@@ -1,8 +1,6 @@
 package com.sycompla.service.http;
 
 import ac4y.base.http.Ac4yHttpService;
-import ac4y.indicator.service.object.Ac4yIndicatorObjectService;
-import ac4y.indicator.service.object.transfer.TransferRequest;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
@@ -31,15 +29,15 @@ class Constants {
 
 } // Constants
 
-public class Ac4yIndicatorHttpService extends Ac4yHttpService {
+public class CompositeHttpService extends Ac4yHttpService {
 
-	private final Logger LOG = LogManager.getLogger(Ac4yIndicatorHttpService.class);
+	private final Logger LOG = LogManager.getLogger(CompositeHttpService.class);
 
-	public Ac4yIndicatorHttpService(int aPort) {
+	public CompositeHttpService(int aPort) {
 		setPort(aPort);
 	}
 
-	public Ac4yIndicatorHttpService() {
+	public CompositeHttpService() {
 	}
 
 	private int port = 8002;
@@ -71,28 +69,28 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	public static void main(String[] args) throws Exception {
 
-		Ac4yIndicatorHttpService ac4yIndicatorHttpService =
-			new Ac4yIndicatorHttpService(
-					Integer.valueOf(8002) //new Ac4yTennisChampyHttpService().getPort()
+		CompositeHttpService compositeHttpService =
+			new CompositeHttpService(
+					Integer.valueOf(args[0]) //new Ac4yTennisChampyHttpService().getPort()
 			);
 
 		HttpServer server =
 			HttpServer.create(
 				new InetSocketAddress(
-						ac4yIndicatorHttpService.getPort()
+						compositeHttpService.getPort()
 				)
 				,0
 			);
 
-		server.createContext("/composite/isunknownorinvalidtoken", ac4yIndicatorHttpService.new IsUnknownOrInvalidToken());
-		server.createContext("/composite/acceptauthentication", ac4yIndicatorHttpService.new AcceptAuthentication());
-		server.createContext("/composite/signup", ac4yIndicatorHttpService.new SignUp());
-		server.createContext("/composite/login", ac4yIndicatorHttpService.new LogIn());
-		server.createContext("/composite/authentication", ac4yIndicatorHttpService.new Authentication());
-		server.createContext("/composite/istokenexists", ac4yIndicatorHttpService.new IsTokenExists());
-		server.createContext("/composite/updateuser", ac4yIndicatorHttpService.new UpdateUserByGuid());
-		server.createContext("/composite/getuserfrombytoken", ac4yIndicatorHttpService.new GetUserFromByToken());
-		server.createContext("/composite/getuserguidbytoken", ac4yIndicatorHttpService.new GetUserGuidByToken());
+		server.createContext("/composite/isunknownorinvalidtoken", compositeHttpService.new IsUnknownOrInvalidToken());
+		server.createContext("/composite/acceptauthentication", compositeHttpService.new AcceptAuthentication());
+		server.createContext("/composite/signup", compositeHttpService.new SignUp());
+		server.createContext("/composite/login", compositeHttpService.new LogIn());
+		server.createContext("/composite/authentication", compositeHttpService.new Authentication());
+		server.createContext("/composite/istokenexists", compositeHttpService.new IsTokenExists());
+		server.createContext("/composite/updateuser", compositeHttpService.new UpdateUserByGuid());
+		server.createContext("/composite/getuserfrombytoken", compositeHttpService.new GetUserFromByToken());
+		server.createContext("/composite/getuserguidbytoken", compositeHttpService.new GetUserGuidByToken());
 
 		server.setExecutor(null); // creates a default executor
 
@@ -101,7 +99,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // main
 
 	class IsUnknownOrInvalidToken implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
@@ -113,7 +111,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 	    	exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -152,7 +150,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // IsUnknownOrInvalidToken
 
 	class AcceptAuthentication implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
@@ -164,7 +162,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -205,7 +203,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // AcceptAuthentication
 
 	class SignUp implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
@@ -217,7 +215,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -256,19 +254,19 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // SignUp
 
 	class LogIn implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
-			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+			httpExchange.sendResponseHeaders(200, response.length());
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(), 0, response.length());
 
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -311,7 +309,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // LogIn
 
 	class Authentication implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
@@ -323,7 +321,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -362,7 +360,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // Authentication
 
 	class IsTokenExists implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
@@ -374,7 +372,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -413,7 +411,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // IsTokenExists
 
 	class UpdateUserByGuid implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
@@ -425,7 +423,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -464,7 +462,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // UpdateUserByGuid
 
 	class GetUserFromByToken implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
@@ -476,7 +474,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -515,7 +513,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 	} // GetUserFromByToken
 
 	class GetUserGuidByToken implements HttpHandler {
-
+/*
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
@@ -527,7 +525,7 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 			os.close();
 
 		} // writeResponse
-
+*/
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);

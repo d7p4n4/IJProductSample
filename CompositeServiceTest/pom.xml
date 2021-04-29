@@ -6,7 +6,6 @@
 
     <groupId>sycompla</groupId>
     <artifactId>CompositeServiceTest</artifactId>
-    <packaging>jar</packaging>
     <version>1.1.20210428.1</version>
 
     <repositories>
@@ -26,6 +25,8 @@
         </repository>
 
     </distributionManagement>
+
+    <packaging>jar</packaging>
 
     <dependencies>
 

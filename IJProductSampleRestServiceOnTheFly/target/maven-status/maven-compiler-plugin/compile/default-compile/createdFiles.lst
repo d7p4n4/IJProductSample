@@ -1,3 +1,11 @@
-com\sycompla\service\http\Ac4yIndicatorHttpService$Transfer.class
-com\sycompla\service\http\Ac4yIndicatorHttpService.class
+com\sycompla\service\http\CompositeHttpService$GetUserFromByToken.class
+com\sycompla\service\http\CompositeHttpService$LogIn.class
+com\sycompla\service\http\CompositeHttpService$IsTokenExists.class
+com\sycompla\service\http\CompositeHttpService$AcceptAuthentication.class
+com\sycompla\service\http\CompositeHttpService.class
+com\sycompla\service\http\CompositeHttpService$Authentication.class
+com\sycompla\service\http\CompositeHttpService$SignUp.class
+com\sycompla\service\http\CompositeHttpService$GetUserGuidByToken.class
+com\sycompla\service\http\CompositeHttpService$IsUnknownOrInvalidToken.class
+com\sycompla\service\http\CompositeHttpService$UpdateUserByGuid.class
 com\sycompla\service\http\Constants.class
