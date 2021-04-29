@@ -7,13 +7,13 @@ public class LogInResponse extends Ac4yServiceResponse {
 
     public String fbToken;
 
-    public RequestToken requestToken;
+    public RequestToken authenticationRequest;
 
     public LogInResponse() {}
 
     public LogInResponse(String fbToken, RequestToken authenticationRequest) {
         this.fbToken = fbToken;
-        this.requestToken = authenticationRequest;
+        this.authenticationRequest = authenticationRequest;
     }
 
     public String getFbToken() {
@@ -24,11 +24,11 @@ public class LogInResponse extends Ac4yServiceResponse {
         this.fbToken = fbToken;
     }
 
-    public RequestToken getRequestToken() {
-        return requestToken;
+    public RequestToken getAuthenticationRequest() {
+        return authenticationRequest;
     }
 
-    public void setRequestToken(RequestToken requestToken) {
-        this.requestToken = requestToken;
+    public void setAuthenticationRequest(RequestToken authenticationRequest) {
+        this.authenticationRequest = authenticationRequest;
     }
 } // LogInResponse

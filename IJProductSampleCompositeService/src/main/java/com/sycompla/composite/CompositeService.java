@@ -359,6 +359,8 @@ public class CompositeService {
 
         LogInResponse response = new LogInResponse();
 
+        response.setFbToken(request.getFbToken());
+
         try {
 
             IsUnknownOrInvalidTokenResponse isUnknownOrInvalidTokenResponse = isUnknownOrInvalidToken(
@@ -398,7 +400,7 @@ public class CompositeService {
 
                         if(insertResponseRequestToken.getResult().getCode() == 1) {
 
-                            response.setRequestToken(requestToken);
+                            response.setAuthenticationRequest(requestToken);
 
                             response.setResult(
                                     new Ac4yProcessResult(
@@ -432,12 +434,14 @@ public class CompositeService {
 
                         if(updateByGuidResponseRequestToken.getResult().getCode() == 1) {
 
-                            response.setRequestToken(requestToken);
+                            response.setAuthenticationRequest(requestToken);
+
+                            String message = "sikeres login checkData frissitéssel";
 
                             response.setResult(
                                     new Ac4yProcessResult(
                                             1
-                                            , "sikeres login checkData frissitéssel"
+                                            , message
                                             , null
                                     )
                             );

@@ -11,6 +11,7 @@ import com.sycompla.object.user.UpdateByGuidRequest;
 import com.sycompla.object.user.UserObjectService;
 import com.sycompla.object.userToken.IsExistsByFbTokenRequest;
 import com.sycompla.object.userToken.UserTokenObjectService;
+import okio.Utf8;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,12 +20,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.nio.charset.StandardCharsets;
 import java.util.stream.Collectors;
 
 class Constants {
 
 	static final String TEXTHTML = "text/html";
-	static final String APPLICATIONJSON = "application/json";
+	static final String APPLICATIONJSON = "application/json charset=UTF-8";
 	static final String CONTENTTYPE = "Content-Type";
 
 } // Constants
@@ -100,9 +102,25 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	class IsUnknownOrInvalidToken implements HttpHandler {
 
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 	    	exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
@@ -135,9 +153,25 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	class AcceptAuthentication implements HttpHandler {
 
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
@@ -151,6 +185,8 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 						).getAsJson();
 
 				LOG.info("\nresponse:\n"+response);
+
+				System.out.println(response.length());
 
 				writeResponse(
 						exchange
@@ -170,9 +206,25 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	class SignUp implements HttpHandler {
 
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
@@ -205,9 +257,25 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	class LogIn implements HttpHandler {
 
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
@@ -220,7 +288,11 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 								(LogInRequest) new LogInRequest().getFromJson(request)
 						).getAsJson();
 
-				LOG.info("\nresponse:\n"+response);
+				LOG.info("\nresponse:\n" + response);
+
+				System.out.println(Utf8.size(response));
+
+				System.out.println(response.length());
 
 				writeResponse(
 						exchange
@@ -240,9 +312,25 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	class Authentication implements HttpHandler {
 
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
@@ -275,9 +363,25 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	class IsTokenExists implements HttpHandler {
 
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
@@ -310,9 +414,25 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	class UpdateUserByGuid implements HttpHandler {
 
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
@@ -343,11 +463,27 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	} // UpdateUserByGuid
 
-	public class GetUserFromByToken implements HttpHandler {
+	class GetUserFromByToken implements HttpHandler {
+
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
 
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
@@ -378,11 +514,27 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	} // GetUserFromByToken
 
-	public class GetUserGuidByToken implements HttpHandler {
+	class GetUserGuidByToken implements HttpHandler {
+
+		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
+
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
+
+			OutputStream os = httpExchange.getResponseBody();
+
+			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+
+			os.close();
+
+		} // writeResponse
 
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
+			exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, OPTIONS, HEAD, PUT, POST");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "*");
+			exchange.getResponseHeaders().set("Access-Control-Allow-Credentials", "true");
 
 			try {
 
