@@ -16,6 +16,9 @@
     <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.4.10" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.3" level="project" />
     <orderEntry type="library" name="Maven: ac4y.service:ac4yServiceDomain:1.1.20210415.1" level="project" />
     <orderEntry type="library" name="Maven: ac4y.base:ac4yBase4JsonAndXml:1.20190609.1" level="project" />
     <orderEntry type="library" name="Maven: ac4y.base:ac4yBase:1.20190505.1" level="project" />

@@ -1,6 +1,7 @@
 package com.sycompla.composite;
 
 import ac4y.service.domain.Ac4yProcessResult;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sycompla.entity.RequestToken;
 import com.sycompla.entity.UserToken;
 import com.sycompla.object.requestToken.RequestTokenObjectService;
@@ -513,24 +514,37 @@ public class CompositeService {
                 .build();
         Call call = client.newCall(requestOk);
 
-
         try {
 
             Response responseClient = call.execute();
 
-            ResponseBody responseBody = responseClient.body();
+            String responseBody = responseClient.body().string();
 
             System.out.println(responseBody);
 
-            responseBody.close();
+            FBSendMessageResponse.Root responseObject = new ObjectMapper().readValue(responseBody, FBSendMessageResponse.Root.class);
 
-            response.setResult(
-                    new Ac4yProcessResult(
-                            1
-                            , "ok"
-                            , null
-                    )
-            );
+            if(responseObject.getSuccess() == 1 && responseObject.getFailure() == 0) {
+
+                response.setResult(
+                        new Ac4yProcessResult(
+                                1
+                                , "a message sikeresen megérkezett"
+                                , null
+                        )
+                );
+
+            } else {
+
+                response.setResult(
+                        new Ac4yProcessResult(
+                                -1
+                                , responseObject.getResults().get(0).getError()
+                                , null
+                        )
+                );
+
+            }
 
         } catch (Exception exception) {
 

@@ -15,7 +15,7 @@ public class Run {
         AuthenticationResponse authenticationResponse = new CompositeService()
                 .authentication(new AuthenticationRequest(
                         "556152"
-                        , "elfFf623jS3uKQJVnggORW:APA91bEdHHF9v3M1lZh3dSLLRh_aQshNEtmP_RILYlSn3e8dEznWLyOw2tMVFbmm9iXkgoKl7LAViPsI6n4anfm3LPB-DJZ1Q43FxvFSst5g8mH0N4qL5vlNgbtMeny63zNV3WpypKHn"
+                        , "elfFf623jS3uKQJVnggOdRW:APA91bEdHHF9v3M1lZh3dSLLRh_aQshNEtmP_RILYlSn3e8dEznWLyOw2tMVFbmm9iXkgoKl7LAViPsI6n4anfm3LPB-DJZ1Q43FxvFSst5g8mH0N4qL5vlNgbtMeny63zNV3WpypKHn"
                 ));
 
         return authenticationResponse;

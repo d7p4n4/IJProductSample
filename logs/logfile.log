@@ -439,3 +439,21 @@ INFO  | 2021-04-29 08:27:33 | [Thread-2] dialect.Dialect (Dialect.java:175) - HH
 INFO  | 2021-04-29 08:27:33 | [Thread-2] http.Ac4yIndicatorHttpService$GetUserGuidByToken (Ac4yIndicatorHttpService.java:398) - 
 response:
 {"guid":"tesztguid","threadId":null,"result":{"code":0,"message":null,"description":null,"requestId":null},"GUID":"5e645599-939b-49e1-a864-81fab586c088","ac4yIdentification":{"template":{"GUID":"8eda3879-3e44-450b-8ff2-9e35f6dadea8","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"5e645599-939b-49e1-a864-81fab586c088","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-29 09:13:34 | [Thread-2] http.Ac4yIndicatorHttpService$Authentication (Ac4yIndicatorHttpService.java:251) - 
+request:
+{
+    "fbToken": "ddddddddd"
+    , "checkData": "684526"
+}
+INFO  | 2021-04-29 09:13:38 | [Thread-2] http.Ac4yIndicatorHttpService$Authentication (Ac4yIndicatorHttpService.java:258) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"InvalidRegistration","description":null,"requestId":null},"GUID":"08d26a54-b137-4dfc-a5c5-c88b21aebfb5","ac4yIdentification":{"template":{"GUID":"b0d33798-992e-4a99-a337-9b7e30b52b85","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"08d26a54-b137-4dfc-a5c5-c88b21aebfb5","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-29 09:14:48 | [Thread-2] http.Ac4yIndicatorHttpService$Authentication (Ac4yIndicatorHttpService.java:251) - 
+request:
+{
+    "fbToken": "elfFf623jS3uKQJVnggOdRW:APA91bEdHHF9v3M1lZh3dSLLRh_aQshNEtmP_RILYlSn3e8dEznWLyOw2tMVFbmm9iXkgoKl7LAViPsI6n4anfm3LPB-DJZ1Q43FxvFSst5g8mH0N4qL5vlNgbtMeny63zNV3WpypKHn"
+    , "checkData": "684526"
+}
+INFO  | 2021-04-29 09:14:52 | [Thread-2] http.Ac4yIndicatorHttpService$Authentication (Ac4yIndicatorHttpService.java:258) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a message sikeresen megérkezett","description":null,"requestId":null},"GUID":"0da5884e-b643-45df-bbb2-b3a53718e3dc","ac4yIdentification":{"template":{"GUID":"8204cbec-484a-4873-ba81-17c4489048f3","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"0da5884e-b643-45df-bbb2-b3a53718e3dc","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
