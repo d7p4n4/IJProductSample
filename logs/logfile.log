@@ -1,0 +1,441 @@
+INFO  | 2021-04-28 14:13:57 | [Thread-2] http.Ac4yIndicatorHttpService$Transfer (Ac4yIndicatorHttpService.java:99) - 
+request:
+{
+    "fbToken": "dsfgvwsfdv"
+}
+INFO  | 2021-04-28 14:13:57 | [Thread-2] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.27.Final
+INFO  | 2021-04-28 14:13:57 | [Thread-2] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2021-04-28 14:13:57 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 14:13:58 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 14:13:58 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 14:13:58 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 14:13:58 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 14:13:59 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 14:14:00 | [Thread-2] http.Ac4yIndicatorHttpService$Transfer (Ac4yIndicatorHttpService.java:106) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a token nem létezik","description":null,"requestId":null},"GUID":"efc4d71a-56c4-4b24-be3b-f550b56ea98b","ac4yIdentification":{"template":{"GUID":"e3d755da-bdda-422f-80c5-af38debd7fc6","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"efc4d71a-56c4-4b24-be3b-f550b56ea98b","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 14:53:52 | [Thread-2] http.Ac4yIndicatorHttpService$Transfer (Ac4yIndicatorHttpService.java:112) - 
+request:
+{
+    "fbToken": "dsfgvwsfdv"
+}
+INFO  | 2021-04-28 14:53:52 | [Thread-2] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.27.Final
+INFO  | 2021-04-28 14:53:53 | [Thread-2] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2021-04-28 14:53:53 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 14:53:54 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 14:53:54 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 14:53:54 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 14:53:54 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 14:53:57 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 14:53:59 | [Thread-2] http.Ac4yIndicatorHttpService$Transfer (Ac4yIndicatorHttpService.java:119) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a token nem létezik","description":null,"requestId":null},"GUID":"977188cb-658e-44b2-8f58-aaebecfd8362","ac4yIdentification":{"template":{"GUID":"38e56fcd-8b54-42ef-b5c0-f4dc8644a0bb","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"977188cb-658e-44b2-8f58-aaebecfd8362","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 15:13:43 | [Thread-2] http.Ac4yIndicatorHttpService$Transfer (Ac4yIndicatorHttpService.java:112) - 
+request:
+{
+    "fbToken": "dsfgvwsfdv"
+}
+INFO  | 2021-04-28 15:13:43 | [Thread-2] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.27.Final
+INFO  | 2021-04-28 15:13:44 | [Thread-2] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2021-04-28 15:13:44 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 15:13:44 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 15:13:44 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 15:13:44 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 15:13:44 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 15:13:47 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 15:13:50 | [Thread-2] http.Ac4yIndicatorHttpService$Transfer (Ac4yIndicatorHttpService.java:119) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a token nem létezik","description":null,"requestId":null},"GUID":"72ab2d49-8e3d-47a4-977a-330d0f2bb760","ac4yIdentification":{"template":{"GUID":"4d8f1431-cb95-4bf8-8517-66cd01e7a66b","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"72ab2d49-8e3d-47a4-977a-330d0f2bb760","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 15:26:58 | [Thread-2] http.Ac4yIndicatorHttpService$Transfer (Ac4yIndicatorHttpService.java:112) - 
+request:
+{
+    "fbToken": "dsfgvwsfdv"
+}
+INFO  | 2021-04-28 15:26:58 | [Thread-2] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.27.Final
+INFO  | 2021-04-28 15:26:59 | [Thread-2] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2021-04-28 15:27:00 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 15:27:00 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 15:27:00 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 15:27:00 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 15:27:00 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 15:27:03 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 15:27:06 | [Thread-2] http.Ac4yIndicatorHttpService$Transfer (Ac4yIndicatorHttpService.java:119) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a token nem létezik","description":null,"requestId":null},"GUID":"63e934ac-d3c8-4aeb-9837-3820b744640e","ac4yIdentification":{"template":{"GUID":"67bfe171-66ae-400a-b958-f305ab07bbb9","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"63e934ac-d3c8-4aeb-9837-3820b744640e","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:24:21 | [Thread-2] http.Ac4yIndicatorHttpService$IsUnknownOrInvalidToken (Ac4yIndicatorHttpService.java:111) - 
+request:
+{
+    "fbToken": "dddddddd"
+}
+INFO  | 2021-04-28 16:24:21 | [Thread-2] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.27.Final
+INFO  | 2021-04-28 16:24:22 | [Thread-2] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2021-04-28 16:24:22 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:24:22 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:24:22 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:24:22 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:24:22 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:24:24 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:24:26 | [Thread-2] http.Ac4yIndicatorHttpService$IsUnknownOrInvalidToken (Ac4yIndicatorHttpService.java:118) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a token nem létezik","description":null,"requestId":null},"GUID":"a60449e7-0b02-4923-afb6-ba1b2f2a3afa","ac4yIdentification":{"template":{"GUID":"5f370ed3-668e-4bcf-8ca9-77146b08db7b","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"a60449e7-0b02-4923-afb6-ba1b2f2a3afa","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:24:41 | [Thread-2] http.Ac4yIndicatorHttpService$IsUnknownOrInvalidToken (Ac4yIndicatorHttpService.java:111) - 
+request:
+{
+    "fbToken": "UPDATED"
+}
+WARN  | 2021-04-28 16:24:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:24:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:24:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:24:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:24:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:24:41 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:24:42 | [Thread-2] http.Ac4yIndicatorHttpService$IsUnknownOrInvalidToken (Ac4yIndicatorHttpService.java:118) - 
+response:
+{"threadId":null,"result":{"code":-1,"message":"létezik a token","description":null,"requestId":null},"GUID":"4493a4c2-ae1d-4074-a298-1fb4ab9d483a","ac4yIdentification":{"template":{"GUID":"6e5773de-3eea-49b8-9277-fa412e95a559","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"4493a4c2-ae1d-4074-a298-1fb4ab9d483a","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:27:35 | [Thread-2] http.Ac4yIndicatorHttpService$AcceptAuthentication (Ac4yIndicatorHttpService.java:146) - 
+request:
+{
+    "guid": "dddddd"
+    , "checkData": "5645651"
+}
+INFO  | 2021-04-28 16:27:35 | [Thread-2] http.Ac4yIndicatorHttpService$AcceptAuthentication (Ac4yIndicatorHttpService.java:153) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a guid és a checkData sem üres","description":null,"requestId":null},"GUID":"440ada9d-d8b2-40c7-9876-53d9f2c7aab1","ac4yIdentification":{"template":{"GUID":"13533ae8-7fcf-4c50-be6a-8783b378f31a","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"440ada9d-d8b2-40c7-9876-53d9f2c7aab1","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:27:41 | [Thread-2] http.Ac4yIndicatorHttpService$AcceptAuthentication (Ac4yIndicatorHttpService.java:146) - 
+request:
+{
+    "guid": ""
+    , "checkData": "5645651"
+}
+INFO  | 2021-04-28 16:27:41 | [Thread-2] http.Ac4yIndicatorHttpService$AcceptAuthentication (Ac4yIndicatorHttpService.java:153) - 
+response:
+{"threadId":null,"result":{"code":-1,"message":"valamelyik érték üres","description":null,"requestId":null},"GUID":"b63699ec-36f6-465f-bcd7-9285c45e906c","ac4yIdentification":{"template":{"GUID":"6ef92b64-9456-48e9-8bb4-a6fa60c09136","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"b63699ec-36f6-465f-bcd7-9285c45e906c","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:27:52 | [Thread-2] http.Ac4yIndicatorHttpService$AcceptAuthentication (Ac4yIndicatorHttpService.java:146) - 
+request:
+{
+    "guid": "dddddd"
+    , "checkData": ""
+}
+INFO  | 2021-04-28 16:27:52 | [Thread-2] http.Ac4yIndicatorHttpService$AcceptAuthentication (Ac4yIndicatorHttpService.java:153) - 
+response:
+{"threadId":null,"result":{"code":-1,"message":"valamelyik érték üres","description":null,"requestId":null},"GUID":"98f542a3-6622-45aa-b804-a3c0df720d16","ac4yIdentification":{"template":{"GUID":"352aa798-cb87-477a-8f51-74dea9a03d69","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"98f542a3-6622-45aa-b804-a3c0df720d16","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:27:59 | [Thread-2] http.Ac4yIndicatorHttpService$AcceptAuthentication (Ac4yIndicatorHttpService.java:146) - 
+request:
+{
+    "guid": "dddddd"
+    , "checkData": "5645651"
+}
+INFO  | 2021-04-28 16:27:59 | [Thread-2] http.Ac4yIndicatorHttpService$AcceptAuthentication (Ac4yIndicatorHttpService.java:153) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a guid és a checkData sem üres","description":null,"requestId":null},"GUID":"a40c5fbe-8ddf-4d4e-901a-21780511d00a","ac4yIdentification":{"template":{"GUID":"68a1e637-ad91-49cf-b739-51c9a5dcb290","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"a40c5fbe-8ddf-4d4e-901a-21780511d00a","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:31:49 | [Thread-2] http.Ac4yIndicatorHttpService$SignUp (Ac4yIndicatorHttpService.java:181) - 
+request:
+{
+    "fbToken": "dddddddddddddddddddddddddddd"
+    , "user": {
+        "name": "java tester"
+    }
+}
+WARN  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:31:49 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:31:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:31:49 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:31:50 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:31:50 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:31:50 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:31:50 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:31:50 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:31:50 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:31:50 | [Thread-2] http.Ac4yIndicatorHttpService$SignUp (Ac4yIndicatorHttpService.java:188) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"a sign up sikeres volt","description":null,"requestId":null},"GUID":"58b1478d-0bd0-4046-b1ce-64c80e390238","ac4yIdentification":{"template":{"GUID":"6f4a57f2-3f76-4a02-80d3-9abe927198de","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"58b1478d-0bd0-4046-b1ce-64c80e390238","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:33:41 | [Thread-2] http.Ac4yIndicatorHttpService$LogIn (Ac4yIndicatorHttpService.java:216) - 
+request:
+{
+    "fbToken": "dd"
+}
+WARN  | 2021-04-28 16:33:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:33:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:33:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:33:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:33:41 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:33:41 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:33:42 | [Thread-2] http.Ac4yIndicatorHttpService$LogIn (Ac4yIndicatorHttpService.java:223) - 
+response:
+{"fbToken":null,"requestToken":null,"threadId":null,"result":{"code":-1,"message":"a token ismeretlen vagy lejárt","description":null,"requestId":null},"GUID":"df2f91dd-c34d-4c1c-86b0-e059b2d6a923","ac4yIdentification":{"template":{"GUID":"37b6b0b0-c8ff-4b6d-8f1a-2f508d066119","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"df2f91dd-c34d-4c1c-86b0-e059b2d6a923","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:34:02 | [Thread-2] http.Ac4yIndicatorHttpService$LogIn (Ac4yIndicatorHttpService.java:216) - 
+request:
+{
+    "fbToken": "dddddddddddddddddddddddddddd"
+}
+WARN  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:02 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:02 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:02 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:03 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:03 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:04 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:04 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:04 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:04 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:05 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:34:05 | [Thread-2] http.Ac4yIndicatorHttpService$LogIn (Ac4yIndicatorHttpService.java:223) - 
+response:
+{"fbToken":null,"requestToken":{"id":1012,"guid":"f2cda10a-df51-47d7-8044-81efd2b21c1a","checkData":"-239199468"},"threadId":null,"result":{"code":1,"message":"sikeres login","description":null,"requestId":null},"GUID":"999ad13a-2a8f-4a04-aa1e-472e684c40dc","ac4yIdentification":{"template":{"GUID":"ab4b98e5-3dfd-4e49-8806-131ac45f3980","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"999ad13a-2a8f-4a04-aa1e-472e684c40dc","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:34:30 | [Thread-2] http.Ac4yIndicatorHttpService$LogIn (Ac4yIndicatorHttpService.java:216) - 
+request:
+{
+    "fbToken": "dddddddddddddddddddddddddddd"
+}
+WARN  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:31 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:31 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:31 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:32 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:32 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:32 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:33 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:34:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:34:34 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:34:34 | [Thread-2] http.Ac4yIndicatorHttpService$LogIn (Ac4yIndicatorHttpService.java:223) - 
+response:
+{"fbToken":null,"requestToken":{"id":0,"guid":"f2cda10a-df51-47d7-8044-81efd2b21c1a","checkData":"1179365261"},"threadId":null,"result":{"code":1,"message":"sikeres login checkData frissitéssel","description":null,"requestId":null},"GUID":"b62d4d5c-bd35-43ef-a196-208302abf6e0","ac4yIdentification":{"template":{"GUID":"3dc2ecb9-d020-442b-a57d-2406288bc94c","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"b62d4d5c-bd35-43ef-a196-208302abf6e0","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:37:16 | [Thread-2] http.Ac4yIndicatorHttpService$Authentication (Ac4yIndicatorHttpService.java:251) - 
+request:
+{
+    "fbToken": "ddddddddd"
+    , "checkData": "684526"
+}
+INFO  | 2021-04-28 16:37:16 | [Thread-2] http.Ac4yIndicatorHttpService$Authentication (Ac4yIndicatorHttpService.java:258) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"ok","description":null,"requestId":null},"GUID":"3945db9d-70e2-4ccb-8f80-da1131ef9ed6","ac4yIdentification":{"template":{"GUID":"71e99875-c9c1-4d99-80d8-ed5db5319675","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"3945db9d-70e2-4ccb-8f80-da1131ef9ed6","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:38:37 | [Thread-2] http.Ac4yIndicatorHttpService$Authentication (Ac4yIndicatorHttpService.java:251) - 
+request:
+{
+    "fbToken": "sas"
+}
+INFO  | 2021-04-28 16:38:38 | [Thread-2] http.Ac4yIndicatorHttpService$Authentication (Ac4yIndicatorHttpService.java:258) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"ok","description":null,"requestId":null},"GUID":"eb55ce74-0d19-449f-8b9e-0cd85fc80b81","ac4yIdentification":{"template":{"GUID":"22a9925f-bc5c-4d99-aa89-c099ca35d82f","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"eb55ce74-0d19-449f-8b9e-0cd85fc80b81","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:39:06 | [Thread-2] http.Ac4yIndicatorHttpService$IsTokenExists (Ac4yIndicatorHttpService.java:286) - 
+request:
+{
+    "fbToken": "sas"
+}
+WARN  | 2021-04-28 16:39:06 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:39:06 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:39:06 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:39:06 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:39:06 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:39:06 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:39:06 | [Thread-2] http.Ac4yIndicatorHttpService$IsTokenExists (Ac4yIndicatorHttpService.java:293) - 
+response:
+{"threadId":null,"result":{"code":-1,"message":"not exists","description":null,"requestId":null},"GUID":"40d51b01-f262-43b3-8d05-eb8d07850bc7","ac4yIdentification":{"template":{"GUID":"d13c1701-cb22-41fd-9148-7b85ca42ef6c","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"40d51b01-f262-43b3-8d05-eb8d07850bc7","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:39:29 | [Thread-2] http.Ac4yIndicatorHttpService$IsTokenExists (Ac4yIndicatorHttpService.java:286) - 
+request:
+{
+    "fbToken": "UPDATED"
+}
+WARN  | 2021-04-28 16:39:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:39:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:39:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:39:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:39:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:39:29 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:39:30 | [Thread-2] http.Ac4yIndicatorHttpService$IsTokenExists (Ac4yIndicatorHttpService.java:293) - 
+response:
+{"threadId":null,"result":{"code":1,"message":"exists","description":null,"requestId":null},"GUID":"98d725ee-dc3b-4dbe-954b-953fd6af8c77","ac4yIdentification":{"template":{"GUID":"9e2be424-6106-4ae8-ba64-b45daef9b0c7","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"98d725ee-dc3b-4dbe-954b-953fd6af8c77","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:41:29 | [Thread-2] http.Ac4yIndicatorHttpService$UpdateUserByGuid (Ac4yIndicatorHttpService.java:321) - 
+request:
+{
+    "guid": "tesztG"
+    , "user": {
+        "name": "UPDATED TESZTER"
+    }
+}
+WARN  | 2021-04-28 16:41:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:41:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:41:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:41:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:41:29 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:41:29 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-28 16:41:30 | [Thread-2] http.Ac4yIndicatorHttpService$UpdateUserByGuid (Ac4yIndicatorHttpService.java:328) - 
+response:
+{"user":{"id":1032,"guid":"tesztG","createdAt":"Apr 23, 2021 2:37:14 PM","updatedAt":"Apr 28, 2021 4:41:30 PM","name":"UPDATED TESZTER","email":"test@mail.hu","password":"pwd123","oAuthToken":"testtoken","language":"magyar","phoneNumber":"+123456789","userName":"uName"},"threadId":null,"result":{"code":1,"message":"ok","description":null,"requestId":null},"GUID":"87aba46c-bc6f-450b-8db9-0a1285344966","ac4yIdentification":{"template":{"GUID":"3aa46294-e43c-4685-8b0e-3b15a524ed82","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"87aba46c-bc6f-450b-8db9-0a1285344966","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-28 16:59:39 | [Thread-2] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.27.Final
+INFO  | 2021-04-28 16:59:40 | [Thread-2] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2021-04-28 16:59:40 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 16:59:40 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 16:59:40 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 16:59:40 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 16:59:40 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 16:59:41 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 17:00:10 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 17:00:10 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 17:00:10 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 17:00:10 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 17:00:10 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 17:00:10 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 17:00:11 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 17:00:11 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 17:00:12 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-28 17:00:12 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-28 17:00:12 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-28 17:00:12 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-28 17:00:12 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-28 17:00:12 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-28 17:00:12 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-29 08:25:40 | [Thread-2] http.Ac4yIndicatorHttpService$GetUserFromByToken (Ac4yIndicatorHttpService.java:356) - 
+request:
+{
+    "fbToken": "UPDATED"
+}
+INFO  | 2021-04-29 08:25:41 | [Thread-2] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.27.Final
+INFO  | 2021-04-29 08:25:42 | [Thread-2] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2021-04-29 08:25:43 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-29 08:25:43 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-29 08:25:43 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-29 08:25:43 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-29 08:25:43 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-29 08:25:46 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-29 08:25:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-29 08:25:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-29 08:25:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-29 08:25:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-29 08:25:49 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-29 08:25:50 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-29 08:25:51 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-29 08:25:51 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-29 08:25:51 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-29 08:25:52 | [Thread-2] http.Ac4yIndicatorHttpService$GetUserFromByToken (Ac4yIndicatorHttpService.java:363) - 
+response:
+{"user":{"id":16,"guid":"tesztguid","createdAt":"Apr 16, 2021 7:31:56 AM","updatedAt":"Apr 16, 2021 7:31:56 AM","name":"Darth Vader","email":"d7p4n4@mail.hu","password":null,"oAuthToken":null,"language":null,"phoneNumber":null,"userName":"DV"},"threadId":null,"result":{"code":1,"message":"ok","description":null,"requestId":null},"GUID":"534adf1a-ef1e-41da-a65f-81cba35962e0","ac4yIdentification":{"template":{"GUID":"73b90d00-2189-428d-9ed1-83473062555a","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"534adf1a-ef1e-41da-a65f-81cba35962e0","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-29 08:26:05 | [Thread-2] http.Ac4yIndicatorHttpService$GetUserFromByToken (Ac4yIndicatorHttpService.java:356) - 
+request:
+{
+    "fbToken": "UPDdATED"
+}
+WARN  | 2021-04-29 08:26:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-29 08:26:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-29 08:26:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-29 08:26:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-29 08:26:05 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-29 08:26:06 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-29 08:26:06 | [Thread-2] http.Ac4yIndicatorHttpService$GetUserFromByToken (Ac4yIndicatorHttpService.java:363) - 
+response:
+{"user":null,"threadId":null,"result":{"code":-1,"message":"nem létezik a token","description":null,"requestId":null},"GUID":"f5e3b15f-75ac-4a75-93df-4dce83c604cd","ac4yIdentification":{"template":{"GUID":"04bed827-aff1-4ee3-bb56-fc6a97e4d37b","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"f5e3b15f-75ac-4a75-93df-4dce83c604cd","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}
+INFO  | 2021-04-29 08:27:32 | [Thread-2] http.Ac4yIndicatorHttpService$GetUserGuidByToken (Ac4yIndicatorHttpService.java:391) - 
+request:
+{
+    "fbToken": "UPDATED"
+}
+WARN  | 2021-04-29 08:27:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-29 08:27:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-29 08:27:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-29 08:27:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-29 08:27:32 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-29 08:27:32 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-29 08:27:33 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+WARN  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://217.144.51.217:1433;databaseName=UserTeszt;loginTimeout=30]
+INFO  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {user=SA, password=****}
+INFO  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2021-04-29 08:27:33 | [Thread-2] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 1 (min=1)
+INFO  | 2021-04-29 08:27:33 | [Thread-2] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+INFO  | 2021-04-29 08:27:33 | [Thread-2] http.Ac4yIndicatorHttpService$GetUserGuidByToken (Ac4yIndicatorHttpService.java:398) - 
+response:
+{"guid":"tesztguid","threadId":null,"result":{"code":0,"message":null,"description":null,"requestId":null},"GUID":"5e645599-939b-49e1-a864-81fab586c088","ac4yIdentification":{"template":{"GUID":"8eda3879-3e44-450b-8ff2-9e35f6dadea8","externalId":null,"name":null,"description":null,"humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"GUID":"5e645599-939b-49e1-a864-81fab586c088","externalId":null,"name":null,"description":" ","humanId":null,"personalHumanId":null,"publicHumanId":null,"internalHumanId":null,"parentHumanId":null,"deleted":false,"persistentId":-2,"namespace":null},"serializing":null}

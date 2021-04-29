@@ -345,34 +345,70 @@ public class Ac4yIndicatorHttpService extends Ac4yHttpService {
 
 	public class GetUserFromByToken implements HttpHandler {
 
-		public void handle(HttpExchange aHttpExchange) throws IOException {
+		public void handle(HttpExchange exchange) throws IOException {
 
-			writeResponse(
-					aHttpExchange
-					, new CompositeService().getUserFromByToken(
-							(GetUserFromByTokenRequest) new GetUserFromByTokenRequest().getFromJson(
-									"{'fbToken': " + getParameterValue(aHttpExchange, "request") + "}"
-							)
-					).getAsJson()
-			);
+			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
 
+			try {
+
+				String request = getPostRequest(exchange);
+
+				LOG.info("\nrequest:\n"+request);
+
+				String response =
+						new CompositeService().getUserFromByToken(
+								(GetUserFromByTokenRequest) new GetUserFromByTokenRequest().getFromJson(request)
+						).getAsJson();
+
+				LOG.info("\nresponse:\n"+response);
+
+				writeResponse(
+						exchange
+						,response
+				);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				writeResponse(
+						exchange
+						,"{\"error\":\""+e.getLocalizedMessage()+"\"}"
+				);
+			}
 		} // handle
 
 	} // GetUserFromByToken
 
 	public class GetUserGuidByToken implements HttpHandler {
 
-		public void handle(HttpExchange aHttpExchange) throws IOException {
+		public void handle(HttpExchange exchange) throws IOException {
 
-			writeResponse(
-					aHttpExchange
-					, new CompositeService().getUserGuidByToken(
-							(GetUserGuidByTokenRequest) new GetUserGuidByTokenRequest().getFromJson(
-									getParameterValue(aHttpExchange, "request")
-							)
-					).getAsJson()
-			);
+			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
 
+			try {
+
+				String request = getPostRequest(exchange);
+
+				LOG.info("\nrequest:\n"+request);
+
+				String response =
+						new CompositeService().getUserGuidByToken(
+								(GetUserGuidByTokenRequest) new GetUserGuidByTokenRequest().getFromJson(request)
+						).getAsJson();
+
+				LOG.info("\nresponse:\n"+response);
+
+				writeResponse(
+						exchange
+						,response
+				);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				writeResponse(
+						exchange
+						,"{\"error\":\""+e.getLocalizedMessage()+"\"}"
+				);
+			}
 		} // handle
 
 	} // GetUserFromByToken
