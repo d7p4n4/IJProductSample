@@ -99,19 +99,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // main
 
 	class IsUnknownOrInvalidToken implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 	    	exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -150,19 +150,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // IsUnknownOrInvalidToken
 
 	class AcceptAuthentication implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -203,19 +203,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // AcceptAuthentication
 
 	class SignUp implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -254,19 +254,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // SignUp
 
 	class LogIn implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
-			httpExchange.sendResponseHeaders(200, response.length());
+			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.length());
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -309,19 +309,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // LogIn
 
 	class Authentication implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -360,19 +360,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // Authentication
 
 	class IsTokenExists implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -411,19 +411,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // IsTokenExists
 
 	class UpdateUserByGuid implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -462,19 +462,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // UpdateUserByGuid
 
 	class GetUserFromByToken implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
@@ -513,19 +513,19 @@ public class CompositeHttpService extends Ac4yHttpService {
 	} // GetUserFromByToken
 
 	class GetUserGuidByToken implements HttpHandler {
-/*
+
 		public void writeResponse(HttpExchange httpExchange, String response) throws IOException {
 
 			httpExchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
 
 			OutputStream os = httpExchange.getResponseBody();
 
-			os.write(response.getBytes(), 0, response.getBytes(StandardCharsets.UTF_8).length);
+			os.write(response.getBytes(StandardCharsets.UTF_8), 0, response.getBytes(StandardCharsets.UTF_8).length);
 
 			os.close();
 
 		} // writeResponse
-*/
+
 		public void handle(HttpExchange exchange) throws IOException {
 
 			exchange.getResponseHeaders().set(Constants.CONTENTTYPE, Constants.APPLICATIONJSON);
